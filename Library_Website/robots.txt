@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /private/
+Disallow: /admin/
+
+# Full books are not offered as PDF/EPUB files. Each print page has a public HTML URL.
+# Canonical individual pages are indexable; multi-page spreads advertise noindex,follow.
+Sitemap: https://library.eviulon.com/sitemap.xml

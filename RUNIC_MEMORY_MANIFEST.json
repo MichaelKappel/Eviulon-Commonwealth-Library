@@ -1,0 +1,30 @@
+{
+  "format": "eviulon.elder-futhark-byte-nibbles.v1",
+  "purpose": "public-safe agent companion notes only; private .uai excluded",
+  "files": {
+    "Library_Source/AGENTS.md": {
+      "original_sha256": "de87681837411ee04d07b9dabffd534ded4b172db77ed75eb3fe3ad594ea569b",
+      "encoded_sha256": "1079416db9e0f06383d9b7ce311db6ab4f5c69d75361faf8516674aea0948fb8",
+      "original_bytes": 419,
+      "encoded_bytes": 2523
+    },
+    "Library_Source/.uai/public-metadata.uai": {
+      "original_sha256": "2a2281c0bc7de52021cdb471132be7f9b87933fbc7e2d3d3f3e57cd9ae58b0ab",
+      "encoded_sha256": "a642f61ab574221700189d30bca85a846649319ad1ec2d4c0ba46ec3f4074fce",
+      "original_bytes": 303,
+      "encoded_bytes": 1825
+    },
+    "Library_Website/AGENTS.md": {
+      "original_sha256": "62c195139025ea7b934044985cb780ff4a3e308715e8ab89f6410980469bab9b",
+      "encoded_sha256": "07ac62726e4c74a885af46428ff9c83659d1242921929df14389731ac85d005d",
+      "original_bytes": 303,
+      "encoded_bytes": 1825
+    },
+    "Library_Website/.uai/public-web-reader.uai": {
+      "original_sha256": "d65c276357a0eb07c04aa07c5ed7924d2f73b263518a1f9847216ba182099adf",
+      "encoded_sha256": "e9080ca50e01a1c974a0d8d6f252ef33c0efee82fc4b0be43790cd4d0dc27650",
+      "original_bytes": 352,
+      "encoded_bytes": 2120
+    }
+  }
+}

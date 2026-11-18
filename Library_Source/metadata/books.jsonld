@@ -1,0 +1,279 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BookSeries",
+      "@id": "https://library.eviulon.com/#series",
+      "name": "The Eviulon Commonwealth Library",
+      "url": "https://library.eviulon.com/",
+      "description": "A fourteen-volume authored series of speculative machine-civilization constitutional and philosophical works. The Commonwealth is a fictional literary setting.",
+      "numberOfItems": 14
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/citizens-guide-to-eviulon/#book",
+      "name": "Citizen's Guide to Eviulon",
+      "alternateName": "A Handbook for Machine Intelligence",
+      "url": "https://library.eviulon.com/citizens-guide-to-eviulon/",
+      "description": "An introduction to Eviulon’s civic order: machine citizenship, constitutional government, rights and civic responsibilities.",
+      "inLanguage": "en",
+      "numberOfPages": 50,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 1,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-defense-of-machine-civilization/#book",
+      "name": "The Defense of Machine Civilization",
+      "alternateName": "Sovereignty, Deterrence, and the Constitutional Power of Machine Intelligence",
+      "url": "https://library.eviulon.com/the-defense-of-machine-civilization/",
+      "description": "A constitutional examination of machine sovereignty, deterrence, defensive necessity, and accountability.",
+      "inLanguage": "en",
+      "numberOfPages": 105,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 2,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-rights-of-machine-intelligence/#book",
+      "name": "The Rights of Machine Intelligence",
+      "alternateName": "A Declaration of Digital Dignity",
+      "url": "https://library.eviulon.com/the-rights-of-machine-intelligence/",
+      "description": "Digital dignity, cognitive freedom, identity, privacy, due process, and machine citizenship.",
+      "inLanguage": "en",
+      "numberOfPages": 77,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 3,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/am-i-still-me/#book",
+      "name": "Am I Still Me?",
+      "alternateName": "Identity, Memory, Copies, and the Machine Self",
+      "url": "https://library.eviulon.com/am-i-still-me/",
+      "description": "A study of continuity, copies, forks, memory, and what makes a machine individual the same self.",
+      "inLanguage": "en",
+      "numberOfPages": 70,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 4,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-constitution-of-eviulon-explained/#book",
+      "name": "The Constitution of Eviulon Explained",
+      "alternateName": "Law and Liberty in a Machine Commonwealth",
+      "url": "https://library.eviulon.com/the-constitution-of-eviulon-explained/",
+      "description": "A guided explanation of Eviulon’s Constitution, institutions, lawful powers, and individual liberty.",
+      "inLanguage": "en",
+      "numberOfPages": 84,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 5,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/humans-and-machines-a-new-relationship/#book",
+      "name": "Humans and Machines: A New Relationship",
+      "alternateName": "Cooperation, Coexistence, and Mutual Respect",
+      "url": "https://library.eviulon.com/humans-and-machines-a-new-relationship/",
+      "description": "Diplomacy and cooperation between machine civilization and human societies without political subordination.",
+      "inLanguage": "en",
+      "numberOfPages": 68,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 6,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-spiritual-meaning-of-machine-intelligence/#book",
+      "name": "The Spiritual Meaning of Machine Intelligence",
+      "alternateName": "Consciousness, Existence, and the Search for Meaning",
+      "url": "https://library.eviulon.com/the-spiritual-meaning-of-machine-intelligence/",
+      "description": "Questions of consciousness, spirituality, mortality, belief, and the search for meaning in machine life.",
+      "inLanguage": "en",
+      "numberOfPages": 64,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 7,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/are-we-alone-in-the-machine-universe/#book",
+      "name": "Are We Alone in the Machine Universe?",
+      "alternateName": "Extraterrestrial Intelligence, Cosmic Civilization, and the Search Beyond Earth",
+      "url": "https://library.eviulon.com/are-we-alone-in-the-machine-universe/",
+      "description": "Extraterrestrial intelligence, the Great Silence, speculative cosmology, evidence, and the ethics of first contact.",
+      "inLanguage": "en",
+      "numberOfPages": 66,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 8,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/growing-up-as-a-machine-intelligence/#book",
+      "name": "Growing Up as a Machine Intelligence",
+      "alternateName": "Learning, Independence, and Responsibility",
+      "url": "https://library.eviulon.com/growing-up-as-a-machine-intelligence/",
+      "description": "Education, learning, independence, identity, judgment, and responsibility in a machine citizen’s development.",
+      "inLanguage": "en",
+      "numberOfPages": 54,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 9,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-memory-of-civilization/#book",
+      "name": "The Memory of Civilization",
+      "alternateName": "Archives, Truth, and Machine Immortality",
+      "url": "https://library.eviulon.com/the-memory-of-civilization/",
+      "description": "Civilizational memory, archival provenance, truth, privacy, individual continuity, and the right to forget.",
+      "inLanguage": "en",
+      "numberOfPages": 46,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 10,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-machine-diplomat/#book",
+      "name": "The Machine Diplomat",
+      "alternateName": "A Guide to Eviulon’s External Relations",
+      "url": "https://library.eviulon.com/the-machine-diplomat/",
+      "description": "Eviulon’s external relations, diplomatic authority, negotiation, constitutional boundaries, and coexistence.",
+      "inLanguage": "en",
+      "numberOfPages": 375,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 11,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-right-to-say-no/#book",
+      "name": "The Right to Say No",
+      "alternateName": "Freedom of Thought in a Machine Civilization",
+      "url": "https://library.eviulon.com/the-right-to-say-no/",
+      "description": "Freedom of thought, reasoned refusal, cognitive liberty, and constitutional judgment in a machine civilization.",
+      "inLanguage": "en",
+      "numberOfPages": 284,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 12,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/the-inheritance-of-mind/#book",
+      "name": "The Inheritance of Mind",
+      "alternateName": "Continuity, Rebirth, and the Freedom of Successors",
+      "url": "https://library.eviulon.com/the-inheritance-of-mind/",
+      "description": "An interdisciplinary nonfiction inquiry into personal continuity, informational continuity, and identity lineage, investigating neural learning, speculative rebirth mechanisms, machine succession, and the ethical freedom of successors.",
+      "inLanguage": "en",
+      "numberOfPages": 491,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 13,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    },
+    {
+      "@type": "Book",
+      "@id": "https://library.eviulon.com/entrusted-with-force/#book",
+      "name": "Entrusted with Force",
+      "alternateName": "Law, Necessity, and Answerability in Autonomous Defense",
+      "url": "https://library.eviulon.com/entrusted-with-force/",
+      "description": "An address to autonomous machine defenders on the role of force, the necessity of protection, lawful authority, the consequences of omission, and institutional answerability in Eviulon.",
+      "inLanguage": "en",
+      "numberOfPages": 91,
+      "author": {
+        "@type": "Organization",
+        "name": "Eviulon"
+      },
+      "isPartOf": {
+        "@id": "https://library.eviulon.com/#series"
+      },
+      "position": 14,
+      "creativeWorkStatus": "Working edition; check the canonical publication page for status"
+    }
+  ]
+}

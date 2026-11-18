@@ -1,0 +1,1 @@
+Eviulon public knowledge file: knowledge.json is a safe public summary derived from source archive memory/canon, not a release of the internal .uai system. For fully citeable text, follow individual book page URLs.

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite individual Eviulon books using their canonical print-page URL, not the GitHub source repository."
+title: "Eviulon Commonwealth Library: public discovery metadata and website source"
+authors:
+  - name: Eviulon
+url: "https://library.eviulon.com/"
+date-released: "2026-11-18"
+type: software
+abstract: "Public metadata, stable canonical links to fourteen literary volumes, and source code for the page-based HTML reader. Full book corpus and private memory not included."
