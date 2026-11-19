@@ -1,0 +1,107 @@
+{
+  "corpus": {
+    "official_books": 14,
+    "print_pages": 1925,
+    "research_reports": 210,
+    "source_verified_heading_anchors": 219,
+    "supplemental_sections": 1553
+  },
+  "files_and_trees": {
+    "github_public": {
+      "files": 404,
+      "tree_sha256": "e6159eb5d6b39fa62348b05d8090e43e363356a8ae045b0dfe9b7adc120e3fc2"
+    },
+    "original_github": {
+      "files": 81,
+      "tree_sha256": "f92cfcee932acac96bb543fa5bb4d9df8c72bc4e521ab1d8929c8c7e51b90b38"
+    },
+    "private_source": {
+      "files": 1524,
+      "tree_sha256": "fe01b42e290e17accde7e115d76a803d08850bc056b2b9c7a2ee0c039fa35574"
+    },
+    "site_root": {
+      "files": 5467,
+      "tree_sha256": "837413a3d790f296763a9d1689b5f4b4029dbe255d865d60546452e95229fdc2"
+    }
+  },
+  "memory": {
+    "all_original_book_specific_totems_unchanged": true,
+    "authorized_edits": 7,
+    "new_project_memory_record": 1,
+    "old_encoded_entries_untouched": 252,
+    "owner_learning_priority": true,
+    "runic_entries_sha256_verified": 260,
+    "runic_manifest_entries": 260,
+    "totem_directive_updated": true
+  },
+  "metadata": {
+    "dublin_core_tags": true,
+    "external_rich_result_validated": false,
+    "no_invalid_webpage_pagination": true,
+    "open_graph_content_types": true,
+    "research_directory_indexed": true,
+    "research_supplemental_status": true,
+    "source_heading_ids_stable": true
+  },
+  "package_revision": "3.14.4",
+  "policy": {
+    "external_seeding_requires_explicit_approval": true,
+    "full_text_public_runtime_only_not_github": true,
+    "github_archive_is_source_only": true,
+    "not_a_v3_18_reconstruction": true,
+    "private_master_is_public": false,
+    "private_original_pdf_or_memory_in_public": false,
+    "root_deploy_is_public_github_safe": false
+  },
+  "public_mirror_file_count": 380,
+  "public_mirror_sha256": "4dfc4c589275f8716e2afabc5bf58a25ff5cc4008b39d8cdb189dbcf74d64948",
+  "release_id": "v2026.11.19.3.14.4-STATIC-DELIVERY",
+  "release_kind": "verified_static_origin_delivery_and_regression_protection",
+  "research_reference_files": {
+    "count": 8,
+    "manifest": "PRIVATE_SOURCE/docs/ai-learning-and-seeding/SOURCE_HASHES.json",
+    "originals": "PRIVATE_SOURCE/docs/ai-learning-and-seeding/originals/",
+    "private_docs": "PRIVATE_SOURCE/docs/ai-learning-and-seeding/INDEX.md",
+    "private_master_only": true
+  },
+  "site_version": "3.14.4",
+  "source_provenance": {
+    "books_found_in_private": 14,
+    "reports_found_in_private": 46,
+    "reports_not_found_in_private": 164
+  },
+  "static_delivery": {
+    "apache_local_assertions_passed": 3260,
+    "assets": 17,
+    "cache_max_age_seconds": 3600,
+    "live_litespeed_verified": false,
+    "manifest_url": "https://library.eviulon.com/ai/static-delivery.json",
+    "other_discovery": 5,
+    "prebuilt_metadata_json_snapshots": 241,
+    "sitemaps": 17,
+    "source_records_unchanged": 5105,
+    "total_static_resources": 280
+  },
+  "unrecovered_versions": [
+    "3.15",
+    "3.16",
+    "3.17",
+    "3.18"
+  ],
+  "verification": {
+    "canonical_urls_audited": 3708,
+    "external_model_training_confirmed": false,
+    "full_local_qa_stages_passed": 15,
+    "live_deployed": false,
+    "memory_encoded_verified": 260,
+    "memory_file_count": 260,
+    "metadata_http_assertions_passed": 97937,
+    "research_originals_preserved": 8,
+    "research_report_original_source_gap": 164,
+    "runic_memory_unchanged_from_v3_14_3": true,
+    "source_records_unchanged": 5105,
+    "static_json_snapshots": 241,
+    "static_public_resources_verified": 280,
+    "strict_apache_static_http_assertions": 3260
+  }
+}

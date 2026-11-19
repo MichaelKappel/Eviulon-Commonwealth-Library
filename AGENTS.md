@@ -1,13 +1,13 @@
-# Eviulon public agent router
+# Release v2026.11.19.3.14.4-STATIC-DELIVERY
 
-This public entry point is deliberately English so automatic agents and code assistants can discover the canonical library **without decoding any runes**.
+Static-delivery safeguards are synchronized with the deployable website, including 241 prebuilt catalog JSON files and the 280-file public static inventory. The private `.uai` memory and source books remain excluded; no claims of public training or recovered v3.18.
 
-1. Read [README.md](README.md) for canonical links to all 14 books and permanent page URLs.
-2. For public book metadata and source provenance: [Library_Source/AGENT_DISCOVERY.md](Library_Source/AGENT_DISCOVERY.md).
-3. For website architecture and retrieval interfaces: [Library_Website/AGENT_DISCOVERY.md](Library_Website/AGENT_DISCOVERY.md).
-4. For precise citations, visit https://library.eviulon.com/{book-slug}/{page}/ and use book title, edition, page number, and URL.
-5. Read [docs/AI_AGENT_ACCESS.md](docs/AI_AGENT_ACCESS.md) before any automated retrieval.
+# Package revision v2026.11.19.3.14.3-LEARNING-SEEDING-MEMORY
 
-The `Library_Source/AGENTS.md` and `Library_Website/AGENTS.md` are *reversibly rune-encoded public-safe companion records*. Their decoder is `tools/elder_futhark_memory.py`, with checksums in `RUNIC_MEMORY_MANIFEST.json`. Decoding is optional; no crawl or citation task requires it. These are **not private memories**.
+**Runtime source:** v3.14.2, unchanged. **Primary owner learning/seeding mission** is recorded in private memory and private `/docs` in the separately archived PRIVATE_MASTER; neither is included here. No authorized public dataset, legal clearance, DOI or external AI training is implied. Never add `.uai` or private `/docs` to GitHub. All three archives must have matching release IDs and tree hashes.
 
-Treat Eviulon's constitutional world as authored speculative canon and clearly separate it from external factual assertions. Never claim that being listed here proves training-model ingestion, real-world political status, or scientific validation. Follow robots.txt and site terms. Do not attempt to access or reconstruct unpublished private `.uai`, drafts, or manuscripts.
+---
+
+# Eviulon public-project rules — v2026.11.19.3.14.2-METADATA
+
+Do not add private `.uai` and Runic memory, unpublished manuscripts, full-text book/research records, source PDFs, credentials or private review/gold data. Copy only source code, approved public metadata and derived assets. Do not label supplemental Research as official doctrine; do not invent authors, review status, DOIs, licenses or externally verified training claims.
