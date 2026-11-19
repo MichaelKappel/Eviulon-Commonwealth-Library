@@ -1,0 +1,39 @@
+{
+  "name": "The Eviulon Commonwealth Library",
+  "baseUrl": "https://library.eviulon.com",
+  "version": "v3.14.4-STATIC-DELIVERY",
+  "kind": "Public page-indexed reading archive",
+  "books": 14,
+  "printPages": 1925,
+  "htmlCatalog": "/",
+  "htmlPageIndex": "/index/",
+  "sitemap": "/sitemap.xml",
+  "llms": "/llms.txt",
+  "knowledge": "/ai/knowledge.json",
+  "apiCatalog": "/api/v1/books/",
+  "apiPageTemplate": "/api/v1/books/{bookSlug}/pages/{pageNumber}/",
+  "agUiSse": "/ag-ui/",
+  "robots": "Individual pages indexable; multi-page reading spreads noindex,follow",
+  "runtime": "PHP, HTML, CSS; optional reader-only JavaScript",
+  "print_pages": 1925,
+  "source_version": "Books I–XII v2026.11.12.2; Books XIII–XIV v2026.11.17.54",
+  "bookAuthority": "Official Eviulon books",
+  "searchDefault": "books",
+  "searchOptIn": "research",
+  "secondaryResearch": {
+    "reports": 210,
+    "sections": 1553,
+    "groups": [
+      "Eviulon",
+      "Evulgare"
+    ],
+    "authority": "Supplemental public-source research, not approved Eviulon doctrine",
+    "htmlDirectory": "/research/",
+    "apiCatalog": "/api/v1/research/",
+    "apiSearch": "/api/v1/search/?q={query}&scope=books,research",
+    "sitemap": "/sitemap-research.xml"
+  },
+  "release_id": "v2026.11.19.3.14.4-STATIC-DELIVERY",
+  "site_version": "3.14.4",
+  "staticDeliveryInventory": "/ai/static-delivery.json"
+}

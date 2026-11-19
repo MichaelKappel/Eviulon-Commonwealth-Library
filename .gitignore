@@ -1,0 +1,37 @@
+# Never stage private Eviulon sources, decoded memory, or full corpus artifacts
+.git/
+**/.git/
+**/.uai-private/
+**/.runic-decoded/
+**/Eviulon_Decoded_Working_Copy/
+Library_Source/Library/
+Library_Source/Shared_Research_and_UAI/
+Library_Source/docs/
+Library_Website/data/pages/
+Library_Website/data/search/
+Library_Website/data/monitor-logs/
+Library_Website/data/monitor-config.php
+**/__pycache__/
+**/*.pyc
+.env
+.env.*
+*.pdf
+*.epub
+*.mobi
+*.azw*
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.bak
+.DS_Store
+
+# Synchronized public-source-only policy (recovery v3.14.1)
+**/.uai/
+**/*.uai
+Library_Website/data/research/parts/
+Library_Website/data/research/search/
+Library_Website/api-cache/v1/pages/
+
+# Local Visual Studio workspace
+.vs/

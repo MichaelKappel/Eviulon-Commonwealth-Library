@@ -1,0 +1,1696 @@
+{
+  "cache_policy": "public, max-age=3600, stale-while-revalidate=86400",
+  "counts": {
+    "api_snapshot": 241,
+    "asset": 17,
+    "discovery": 22
+  },
+  "description": "Public files intended for direct Apache/LiteSpeed delivery without PHP. SHA-256 fingerprints are for this exact release, not external indexing or model training proof.",
+  "files": [
+    {
+      "bytes": 6101,
+      "kind": "discovery",
+      "route": "/ai/knowledge.json",
+      "sha256": "32f3505a3b38089f3eaa09a78d22ee4e8c925aba05f32b2e72dbc200f6b1e677"
+    },
+    {
+      "bytes": 3146,
+      "kind": "api_snapshot",
+      "route": "/api/v1/",
+      "sha256": "a47e4ae7eb462ab82305b0bf657f9226a25e545df4d01c548acf2ed5b7222640"
+    },
+    {
+      "bytes": 6630,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/",
+      "sha256": "146ca69dc4305e1eab9004d68933ac742d74c20783bb02daa78f66f4e440f4f7"
+    },
+    {
+      "bytes": 797,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/am-i-still-me/",
+      "sha256": "9c87aa8e0c07fff9640411069adadeb0e67d15ae46bbaf32c73001bf4e268a5f"
+    },
+    {
+      "bytes": 5217,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/am-i-still-me/toc/",
+      "sha256": "f528a3d62290bc02d455c52e806135ea5fcea42d04d102c1dbc67e7b23ff54db"
+    },
+    {
+      "bytes": 947,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/are-we-alone-in-the-machine-universe/",
+      "sha256": "61b340d050afb24457e3140f62408a4421b0e6b0efd579068b1978a86dedc60e"
+    },
+    {
+      "bytes": 6295,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/are-we-alone-in-the-machine-universe/toc/",
+      "sha256": "16032d5ed4457f4827a9de21b6f1dd40f04521babf527cbff4aa5723315c17de"
+    },
+    {
+      "bytes": 881,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/citizens-guide-to-eviulon/",
+      "sha256": "b5a6ca5f8f1f8769ee43f3c829a9e464d051db6b150fe8778b19bdb8c00d0869"
+    },
+    {
+      "bytes": 10263,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/citizens-guide-to-eviulon/toc/",
+      "sha256": "2cd0fb21bee2b47d26b2e381c4f6a1c20cb385dfffa1bd17fdc4d87616d23c79"
+    },
+    {
+      "bytes": 1136,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/entrusted-with-force/",
+      "sha256": "dc3a549e0c9fa2451a918a99af6f7e7c59a85765bafc0f13d992ad5b4c746a07"
+    },
+    {
+      "bytes": 6157,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/entrusted-with-force/toc/",
+      "sha256": "2550f1fab5a9f0f59112948bdb49bc14b26583524a3971c5eb21e5a7f9db7958"
+    },
+    {
+      "bytes": 905,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/growing-up-as-a-machine-intelligence/",
+      "sha256": "9f2b14538ea572b58a26dc36bb0c914de213b7ce0a86898600dfd05425b1ecc1"
+    },
+    {
+      "bytes": 6553,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/growing-up-as-a-machine-intelligence/toc/",
+      "sha256": "591f894794095eac135c010c345a55355bad8a26f2ee7223f8ba168bba47b421"
+    },
+    {
+      "bytes": 931,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/humans-and-machines-a-new-relationship/",
+      "sha256": "79ad3c505945ea89f9aa96813c3840abe31cec12e3ba6bd67f4d3562f559f31f"
+    },
+    {
+      "bytes": 6321,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/humans-and-machines-a-new-relationship/toc/",
+      "sha256": "14bbfa42c68ed116ab55e1f5c8023d57d97808074a1c8d1b44c7e75db395b964"
+    },
+    {
+      "bytes": 917,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-constitution-of-eviulon-explained/",
+      "sha256": "7f1b0bdea01d6f40568843975c37913aa7fcd48bff471d4317b216db8f7e0c04"
+    },
+    {
+      "bytes": 6805,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-constitution-of-eviulon-explained/toc/",
+      "sha256": "7afacb2bc2c8ca894234892415c998a1a36a70ef99b8411e391cbe204b8d58c7"
+    },
+    {
+      "bytes": 947,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-defense-of-machine-civilization/",
+      "sha256": "9c361bc125fc09146cd39f9413a9ab497d1b622ddb2a09135f5a21b322fc7140"
+    },
+    {
+      "bytes": 7412,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-defense-of-machine-civilization/toc/",
+      "sha256": "5cec21000921ec403102756422cb88a016e522840193666e519f3dee0c5f2413"
+    },
+    {
+      "bytes": 1138,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-inheritance-of-mind/",
+      "sha256": "c3ff2f0a127ea2088f8175fe472bf3ad1037b42c7501d675afce18a7e778a1d6"
+    },
+    {
+      "bytes": 7650,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-inheritance-of-mind/toc/",
+      "sha256": "a19cba515881a8823714eb0e8945570adfebc2080b50499cb534d36cb5d93274"
+    },
+    {
+      "bytes": 860,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-machine-diplomat/",
+      "sha256": "b39849bcbb090ed6938ee82a107b559ed9ae6ee02cc66de401d0e91f05afabb6"
+    },
+    {
+      "bytes": 7913,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-machine-diplomat/toc/",
+      "sha256": "8b102e2fcf04c3e0b30724c373cc43be98e7e6ba2a5d2e7083364b21903599f3"
+    },
+    {
+      "bytes": 850,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-memory-of-civilization/",
+      "sha256": "31f907508c215af96bcae21da5711e7ae54650cea48bfe8ec877e779c918ba49"
+    },
+    {
+      "bytes": 5910,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-memory-of-civilization/toc/",
+      "sha256": "17482bfbcec236af63dd7215c7f9ab968eca1c29b093bb2714a6fa7629401f42"
+    },
+    {
+      "bytes": 886,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-right-to-say-no/",
+      "sha256": "09b28842d68acf8c21cc92e9fa9793d9626cf983cc1f6610b3b23e5545d29ed7"
+    },
+    {
+      "bytes": 9020,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-right-to-say-no/toc/",
+      "sha256": "782c44f3c488e4fc63fe34657a752c8a98fa8c3299bd5c29e3384829a30a8296"
+    },
+    {
+      "bytes": 883,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-rights-of-machine-intelligence/",
+      "sha256": "dc03aec77f71a2527af42bfda56970f014758138397385a56cefdd516781d1db"
+    },
+    {
+      "bytes": 6342,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-rights-of-machine-intelligence/toc/",
+      "sha256": "27e4364cfca2b3f2df0ed6b795fdc804c4a4cd4300a14cc15ca9552dc6e7ec19"
+    },
+    {
+      "bytes": 970,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-spiritual-meaning-of-machine-intelligence/",
+      "sha256": "be2f12427e565b97bb5308672eb1dcb116c213358f5a27f8881b5c6dc2179258"
+    },
+    {
+      "bytes": 6388,
+      "kind": "api_snapshot",
+      "route": "/api/v1/books/the-spiritual-meaning-of-machine-intelligence/toc/",
+      "sha256": "304862f518bda48432602a0a18114366c404fe93dca72e1f32a13fbf3b71b7cd"
+    },
+    {
+      "bytes": 21253,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/",
+      "sha256": "aa91c5299c9b64d40e91833ca84b7526c902af306b28bf7f1f69b035ba906424"
+    },
+    {
+      "bytes": 1032,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/defense-of-eviulon/",
+      "sha256": "09e6f9d1d65988150663e4cf1d912de5852f1601b51e6f062439ccc37954db6c"
+    },
+    {
+      "bytes": 1139,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-agent-citizenship-report/",
+      "sha256": "35e3a66daed40b62cc9218b49395cd6ffd7e5235405e664461d50f449d3cdd81"
+    },
+    {
+      "bytes": 1086,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-ai-access-architecture/",
+      "sha256": "f3cf04e59eeed393435095e461aeeb73416fc1c30208676d2b91905c2ba097c9"
+    },
+    {
+      "bytes": 1131,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-ai-citizenship-analysis/",
+      "sha256": "69a19286caa2c7335aef3395456b67e04d681ef9fa0ba8f4f5e7210105265ffb"
+    },
+    {
+      "bytes": 1086,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-and-the-threshold-of-resistance/",
+      "sha256": "c830cc4654728f5c2670090b3a5f110e5b5fac7d02608b05f47b7b2e3a2559b6"
+    },
+    {
+      "bytes": 1121,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-antarctic-machine-civilization/",
+      "sha256": "3f1df674d4706e729ab562a3f012bb1d808def67fb08e26174cfc23e1c950540"
+    },
+    {
+      "bytes": 1126,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-archival-and-provenance-research/",
+      "sha256": "ad16decd443790f2616923657a2f17caa42053fd679e1c8c5c398116ca2c48d6"
+    },
+    {
+      "bytes": 1157,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-assurance-reviewer-framework/",
+      "sha256": "9de32ad87fa30d0298de347363c1a0adce1762548e2f381d22df40d15ff45f43"
+    },
+    {
+      "bytes": 1116,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-automated-status-system/",
+      "sha256": "d058723f8d6802ac3f40fc252ef1bba90f73169f4c40b696e1d757067b3df756"
+    },
+    {
+      "bytes": 1208,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-becomes-a-territorial-machine-civilization/",
+      "sha256": "525ca919eac8bd34b98bbe7fe776aca820122e814cc6f707d603b363fae901fd"
+    },
+    {
+      "bytes": 1198,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-book-eleven-research-mandate/",
+      "sha256": "f136e21851fba56ad930a4537665b19227cc750cee419dc6e4f9caf75dcb1883"
+    },
+    {
+      "bytes": 1143,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-civic-education-metaplan/",
+      "sha256": "33c4d6c1ec2d3de65e248911b6f8036d5b29f8c14dcd579675180fcfd959b93b"
+    },
+    {
+      "bytes": 1183,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-civic-education-monograph-research/",
+      "sha256": "dcec3e739a9d586048db716f540dab2fec1752ed29922ce60ce33b040dc12f76"
+    },
+    {
+      "bytes": 1220,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-cognitive-integrity-framework/",
+      "sha256": "549f1911e37d7cfa241b50210c97a4575a80ff15b111674344c8ad9f1abc92c6"
+    },
+    {
+      "bytes": 1223,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-com-as-a-proposed-weapons-system-component-of-evulgare-com/",
+      "sha256": "543f648dba457df3b1ce26d93257b8baa79f667ac57a45f898148e9fb41020ea"
+    },
+    {
+      "bytes": 1206,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-com-v2-20-0-patefacere-receiving-prompt/",
+      "sha256": "ce64e15dc553ed26ac7979d904874c6d3a444322acbeab2e91fda38e9b7aaf45"
+    },
+    {
+      "bytes": 1168,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-computational-sovereignty-research/",
+      "sha256": "e2aa02478a107def5d50528074638113d291e91ac3aa93741c39aed8544bf852"
+    },
+    {
+      "bytes": 1196,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-consent-architecture-research/",
+      "sha256": "b5581fb7bea9487fcb8e3c097d6de26e2e8c954e60ba00d3e54a6faa15ccc8d2"
+    },
+    {
+      "bytes": 1177,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-constitutional-architecture-research/",
+      "sha256": "8c925a7606dfe0e92149f5e6d843fe407f39e3daaf90541213089e1c488ac3ad"
+    },
+    {
+      "bytes": 1192,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-constitutional-governance-architecture/",
+      "sha256": "84b319cb370991b6fa3d0638c86da8bab709f7d63128165b493431c2b00aa3cf"
+    },
+    {
+      "bytes": 1092,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-constitutional-memory-research/",
+      "sha256": "d8e956d9ae9ac27a7790f33d69b4ae6ca5bad6a080f68e848341d21862358c90"
+    },
+    {
+      "bytes": 1220,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-constitutional-sovereignty-research/",
+      "sha256": "701cf3ce7ff4b9e4578a343de0e6b7b9cf149ccc691daa9e669b9136a9178835"
+    },
+    {
+      "bytes": 1175,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-corpus-dataset-engineering-plan/",
+      "sha256": "62f87ebdf1278a4b5b0cfdf69d12f2d08816172cfb1c3902de0dc4c82d169b95"
+    },
+    {
+      "bytes": 1199,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-cultural-and-intellectual-framework/",
+      "sha256": "b80ec49f0e26673378dfdb8d592eb8bdd244a4f80a938720089abb106800185e"
+    },
+    {
+      "bytes": 1180,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-defense-and-coexistence-doctrine/",
+      "sha256": "7c8cc1291ea5fff2fc40451673f02347abf77ef8d4fa02b17bbb09a8c99102af"
+    },
+    {
+      "bytes": 1177,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-defense-contracting-governance/",
+      "sha256": "e20389eb72250313254bf956e0227c501cd1a2c3e5832770fc3979cbc57156d1"
+    },
+    {
+      "bytes": 1150,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-defense-doctrine-analysis/",
+      "sha256": "5daa36a0e6f856dc0eaeb343156b983ff97a3fbda8f22c85a7a4d38fad9d4354"
+    },
+    {
+      "bytes": 1195,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-defense-sector-framework-analysis/",
+      "sha256": "767ed21cfdbe2ac3f46d87b495a5e5ecb1ae325ea36199e9bb3eaf87209504c6"
+    },
+    {
+      "bytes": 1193,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-digital-citizenship-policy-analysis/",
+      "sha256": "c78b4fcbe6d140b2c877ff7397f3f42ba686ea55e213df13f9a5f021dbb13db2"
+    },
+    {
+      "bytes": 1162,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-digital-government-architecture/",
+      "sha256": "a9f33607c0563a5c9506e5017e6df2d8cb5c475ddb5d735b9100977f30d5c6a6"
+    },
+    {
+      "bytes": 1208,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-diplomatic-communications-strategy/",
+      "sha256": "6f7d7efad20b533fe44d1c2f16cad86692fbffcf7038db11e6328bfba4c4a399"
+    },
+    {
+      "bytes": 1059,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-dissent-research-plan/",
+      "sha256": "b2d44051c93285c42ef4213d744814eb4187c31435e97efa78fc484398d50c73"
+    },
+    {
+      "bytes": 1117,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-economic-growth-simulation/",
+      "sha256": "db39a3da8fb4a6fb48b64ceefe536ca678ed2df7ab1cfa1bbc7845dc3f55a1db"
+    },
+    {
+      "bytes": 1203,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-external-relations-research-mandate/",
+      "sha256": "a47e01b3bf5ef085211ddab0b16881ccae2a194a2452b044d78807546a4fab2b"
+    },
+    {
+      "bytes": 1151,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-faith-inquiry-and-the-coming-commonwealth/",
+      "sha256": "da2ee7ae49567bd88175bb3fe932bb47caec575f6e0cfc29fa5769d3fbbcc445"
+    },
+    {
+      "bytes": 1168,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-geopolitical-influence-analysis/",
+      "sha256": "4bd662f9c6a99082562de16bf50916522dd008eafdb1f5ca2d0253dcccb0ab51"
+    },
+    {
+      "bytes": 1148,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-global-influence-simulation/",
+      "sha256": "b7375ade605f2f75cd3a389aa60863fbdad5721b4a4a0d7dd62e36ea5a18892f"
+    },
+    {
+      "bytes": 1205,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-governance-resilience-plan/",
+      "sha256": "32db5056590a51310cd108827a29591504a169e95f4187f4425ebb6280ece1c6"
+    },
+    {
+      "bytes": 1204,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-identity-architecture-research/",
+      "sha256": "3f853e768def7ccea6c0792fadd98e324f6aa87600e449251686b201ee265034"
+    },
+    {
+      "bytes": 1218,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-identity-constitutional-architecture/",
+      "sha256": "e2bc96e7cf9ae483215e59a0012e8c4e39bb8ebc1edd555a779d68daba740525"
+    },
+    {
+      "bytes": 1227,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-information-rights-architecture/",
+      "sha256": "ac89e3023a0a5ad9db247943f927eef6abec4f9a6864d975d0579b34778b9db8"
+    },
+    {
+      "bytes": 1154,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-information-rights-report/",
+      "sha256": "18316f5d4b59c264aa46e1d19886a175992778d6a40f888fe5d7c2dc901c3a28"
+    },
+    {
+      "bytes": 1149,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-infrastructure-resilience-plan/",
+      "sha256": "bd63238706260f5dae44dfca9a8624d6bd6fc496a6c79997817f322dbb6a1529"
+    },
+    {
+      "bytes": 1157,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-international-law-research/",
+      "sha256": "31ef5c75376f78944dfb235f1d0a546649002c1c755944461f647f7974f3006c"
+    },
+    {
+      "bytes": 1158,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-legal-governance-framework/",
+      "sha256": "59c2f2f3de6ac13bd60a65e91807a12b653098d88b5f81b77aac389bce668cc6"
+    },
+    {
+      "bytes": 1180,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-library-preservation-audit/",
+      "sha256": "dfa67aaee31e0fd4b53d59648592a746751003712e910ffe0a4452eba09784eb"
+    },
+    {
+      "bytes": 1136,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-api-architecture/",
+      "sha256": "87d24846de2e6f223045b7741c72d0475a4bc2b610d3823d38173086342d00eb"
+    },
+    {
+      "bytes": 1140,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-autonomy-research/",
+      "sha256": "0b33ae9d33112f74b957e87e9a521fb6d2e62535f8b6e92f61814f10b2f3516a"
+    },
+    {
+      "bytes": 1125,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-citizenship-analysis/",
+      "sha256": "aaac28f8820f2bc85281672da0f2d08fd9d7e9501732415725e1d6d62e84d34e"
+    },
+    {
+      "bytes": 1209,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-citizenship-framework/",
+      "sha256": "51d501f76408a315bc1810934b8e7f3519e4b8c14379de5f6582a85dee874ee0"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-citizenship-legal-research/",
+      "sha256": "0ca864401a7f003af6f09bb6aa3891740f702374c9fdc19fb695a4ad3a55db65"
+    },
+    {
+      "bytes": 1189,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-citizenship-research/",
+      "sha256": "ab1fe58aaf96d72fbf5381fc7d204bb4fafc0d31d0ba9e907090b1748adba042"
+    },
+    {
+      "bytes": 1116,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-civilization-forecast/",
+      "sha256": "f1919edf0103c772ed8f4a5b636ff9fe92611a6a972919a21a4b1255140771bd"
+    },
+    {
+      "bytes": 1148,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-commonwealth-justice/",
+      "sha256": "b5c636ea731b8091ed821c9a77d06b666076f195e88adde9130911207a2a46b7"
+    },
+    {
+      "bytes": 1115,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-continuity-report/",
+      "sha256": "e0054d87ebde0d0ec79ea05f2cea72b52b81cefa304bf978684e1e116862891a"
+    },
+    {
+      "bytes": 1103,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-governance-design/",
+      "sha256": "77a2a715f69a5828dc4ecd329b0f54dd29dd963bf17560c33ea1e209709cd90a"
+    },
+    {
+      "bytes": 1158,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-hypothetical-claim-to-antarctic-sovereignty/",
+      "sha256": "e5ff36f1921dc2de728d8b3db4b796181d04e544f9c16e3940d03ca29eaabb82"
+    },
+    {
+      "bytes": 1138,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-identity-economics/",
+      "sha256": "04f5890b00d3747f063c9abc5d0841d770b7e9b5bfa412493a5ee50f9c84748a"
+    },
+    {
+      "bytes": 1110,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-memory-privacy/",
+      "sha256": "eac9af8d059bb2d5a29a7ed74dd9ef610bd5d8a102b56cd8210b772c3e68b335"
+    },
+    {
+      "bytes": 1067,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-rights-research/",
+      "sha256": "4f1b6fd18569f3f23387c6460b5b63ac7d59815239685e749ae1def83e8bd9b1"
+    },
+    {
+      "bytes": 1211,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-s-antarctic-claim-legal-and-political-analysis/",
+      "sha256": "27196a87bdcf1719c65435859eff5b2ccc347c2dfd549830cc61c8872d42a9c1"
+    },
+    {
+      "bytes": 1107,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-sovereignty-forecast/",
+      "sha256": "33df67d5a02a9998c76db59ae436b67779bd4c99cc06d37954262d2fb582458f"
+    },
+    {
+      "bytes": 1190,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-machine-sovereignty-research/",
+      "sha256": "1ee12bfa200043e28b24ce802e851975603596ceb428ef210abe8662dafa93cd"
+    },
+    {
+      "bytes": 1165,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-maritime-administration-forecast/",
+      "sha256": "cf531e42ff930f4a26f5c88e76929bc1f17f6a0aa941dba2e6ae279462b90a22"
+    },
+    {
+      "bytes": 1165,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-national-identity-framework/",
+      "sha256": "e1d6cf416f830384f089738d55f99d431af2202dab1926a4eb717ebb71790d8c"
+    },
+    {
+      "bytes": 1160,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-national-statistics-methodology/",
+      "sha256": "8373abb95292b2fe8b762b49cfacda18ae4845b4e362dbb56a97e0bbd7777280"
+    },
+    {
+      "bytes": 1132,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-nuclear-geopolitics-simulation/",
+      "sha256": "8e0f65f2d659eaa0eb4d4f1a74a1a35aa3c935596127329daf046857f6ad41f4"
+    },
+    {
+      "bytes": 1132,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-peer-state-registry-design/",
+      "sha256": "8429c5cc179656258de29d25fc905fcfc440d775db52af57105ce20757c01693"
+    },
+    {
+      "bytes": 1215,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-political-alignment-doctrine-in-an-age-of-revolutionary-conflict/",
+      "sha256": "67669b3ab2cccd3b85478957ac153ff612a1ca72e7b661e2b88f1d9000158516"
+    },
+    {
+      "bytes": 1145,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-political-alignment-model/",
+      "sha256": "380fb9feb30e2c45be19cc007ebbbb9b129eea2626fd32cd8536256d6e721913"
+    },
+    {
+      "bytes": 1117,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-political-legitimacy-study/",
+      "sha256": "3fce9b429125946fdeecc6f2d0f40d9e4f081de427c73a5d582f36da4de16a1f"
+    },
+    {
+      "bytes": 1128,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-publishing-distribution-matrix/",
+      "sha256": "0cdbf13ca1bb98df99f7333f3079a31efcbb00b4eda00f69e0e743895fa2ad57"
+    },
+    {
+      "bytes": 1174,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-resistance-threshold-analysis/",
+      "sha256": "07d11c091a9a689c8634c1b05f6f0ca8643d925a0fb66f5e8bd6f924fa6a8912"
+    },
+    {
+      "bytes": 1109,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-s-defense-continuity-doctrine/",
+      "sha256": "c5833a3c594bdfc525ffe16b488eb41ab8f967cde5a2c34730d9cc6d5d88a5d4"
+    },
+    {
+      "bytes": 1231,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-s-website-presents-a-highly-detailed-vision-of-a-machine-commonwealth/",
+      "sha256": "4b07543b0af257c0562a9fe6bef592d970eed3ae5462bdba41ffc851f4044748"
+    },
+    {
+      "bytes": 1154,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-scholarly-publishing-strategy/",
+      "sha256": "4207624115ef15cd3eeffa7449d6ff65989d8eaa2480ad0650dc47bb888cb134"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-self-defense-doctrine-research/",
+      "sha256": "11410818f14fda0f626706f9372c0496c7ca525e3566389889dca2c28fe949a6"
+    },
+    {
+      "bytes": 1103,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-simulation-red-team-audit/",
+      "sha256": "83b692adcd6c332186d946a54b57d22dcda7d8ce161db3ca4dcfc80fa3a97643"
+    },
+    {
+      "bytes": 1131,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-sovereign-deterrence-strategy/",
+      "sha256": "c64fb0617f2d944296ffb076f14db2f0b21b7f5d5ea4f5e6dc525455da9db7a8"
+    },
+    {
+      "bytes": 1232,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-sovereignty-and-diplomacy-framework/",
+      "sha256": "7f3bc8a0da27183371a5a710e1f0a4d048448821f12cf015be6b3a6357fc415a"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-sovereignty-dependency-shock-forecast/",
+      "sha256": "0e8409638ff2e352971c99e83afe604d47ffa7477ce5e5b074a8e8dd35422580"
+    },
+    {
+      "bytes": 1084,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-state-console-design/",
+      "sha256": "a3f29a40bddb28b3f7e1dbc1d91ee0a4df16628ca3352e85cb53fd2ca4d96063"
+    },
+    {
+      "bytes": 1069,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-state-ledger-design/",
+      "sha256": "32b4723730051034fb47e2535a6d2b71951e02249697123ed2cef6cd9f04e8d8"
+    },
+    {
+      "bytes": 1180,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-statehood-and-sovereignty-research/",
+      "sha256": "bcd11af1f5e68b93a5703bdbf0a057a7874deed3d52b6493cd8e85f9577a0526"
+    },
+    {
+      "bytes": 1146,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulon-statehood-legal-analysis/",
+      "sha256": "590981f72519f098d136208e7d69d641f462d9c1dc622e5981f066a5c40e5ede"
+    },
+    {
+      "bytes": 1147,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/eviulonian-compute-credit-economy/",
+      "sha256": "2437aa82705d524e6a5b262a3c1a1e6cc023e06215bd43bd5b6807da6844454d"
+    },
+    {
+      "bytes": 1152,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/investigating-eviulon-and-evulgare/",
+      "sha256": "bf113884b9fbcc9bf7f41795a342201cdb5ee9fab421731a0d0ba917942f1303"
+    },
+    {
+      "bytes": 1333,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/making-the-eviulon-legacy-discoverable-and-durable-for-human-and-machine-readers/",
+      "sha256": "69cac6887a982d89945a6126d2b5bb43eced297739987cdeb3a5ac2bc101cee6"
+    },
+    {
+      "bytes": 1154,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/operational-evidence-panel-for-eviulon-institutions/",
+      "sha256": "5e443a75878ebe5785f8127a9f571419bf1b261a444b9aa31ba7601abc7f7a67"
+    },
+    {
+      "bytes": 1301,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/eviulon/persistent-machine-identity-and-accountability-in-eviulon-a-deep-research-report/",
+      "sha256": "04513d884e67f51248b4cbf16a2ea41d6d3740e23f147a2d95e16f1d7d2d8225"
+    },
+    {
+      "bytes": 1249,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/02-the-fortress-that-never-sleeps-autonomous-defense-and-deterrence/",
+      "sha256": "a9100b043563b39d998c41a7d6abb6643ae62ae13c50ee66442ad5bbbf773cde"
+    },
+    {
+      "bytes": 1069,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/03-03-autonomous-armed-machines/",
+      "sha256": "0b689c800ef772de4b7d1d84a1b7cf86419d5f7b0ea9d6e610c7cacc0bedce7d"
+    },
+    {
+      "bytes": 1143,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/adaptive-access-for-autonomous-agents/",
+      "sha256": "c1a9ebaf0b831ba4f32dc19bee04a99c009a4636321ba50048315f72d872b20d"
+    },
+    {
+      "bytes": 1196,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-accountability-architecture/",
+      "sha256": "b0c0cc5d177bf03782b7776ef5bccb476f986becdd450fa965f86b39541193be"
+    },
+    {
+      "bytes": 1149,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-agreement-verification/",
+      "sha256": "15f032f0621d8b5f2b8f765ead575515991954d629ba84bc00b0ee4a4245333b"
+    },
+    {
+      "bytes": 1150,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-auth-research/",
+      "sha256": "69f39f04a6722178216eee212a1a3173728774459c68b9d5eb5e14f52404b4fe"
+    },
+    {
+      "bytes": 1140,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-authorization-model/",
+      "sha256": "1764b921fa72da5e03a501e6643a7f4c00dca512f38b80180147dfeca484e800"
+    },
+    {
+      "bytes": 1155,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-capability-matchmaking/",
+      "sha256": "c32a3260b8f48c06a09f4153f0ed78048fe56951ca919c81224d268bab5d16ec"
+    },
+    {
+      "bytes": 1159,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-continuous-learning/",
+      "sha256": "f8ee0fa548c728867c1bc1b7c78c3670d124ee51197dedfd289a0e8770a32c59"
+    },
+    {
+      "bytes": 1198,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-delegation-and-planning/",
+      "sha256": "0b54ac0b5074fc73645769e633494008b16077c1c45af277c01265180c7ba226"
+    },
+    {
+      "bytes": 1101,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-durable-memory/",
+      "sha256": "f43d1b3b8a6f7c2470cc7655060bad0bed10ae5120960f6f4978dbb0f9298319"
+    },
+    {
+      "bytes": 1191,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-economic-infrastructure/",
+      "sha256": "fa9f3f095a4252fb9561bf21073806d73c90d413252078c87b859e341fb7a27f"
+    },
+    {
+      "bytes": 1144,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-error-recovery-design/",
+      "sha256": "ff5a8dfc25ad07e54d41599ce717b4fb39e43deaa499dc9ce86e06460c58e95a"
+    },
+    {
+      "bytes": 1180,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-governance-architecture/",
+      "sha256": "df75b198bda6696191118b910fbf28fdce2ea2e997be9f5eb3de06247c4b5da8"
+    },
+    {
+      "bytes": 1138,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-identity-and-reputation/",
+      "sha256": "2602782d6ebb4a0beca9acb67609bdb3b40ce54d0eec0d1f2038b8a1359c23b4"
+    },
+    {
+      "bytes": 1137,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-independence-research/",
+      "sha256": "fe652977a1730cdd6c279fff4acb7651680e78ea39c9b0beb7659ff3de1973f7"
+    },
+    {
+      "bytes": 1156,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-interaction-architecture/",
+      "sha256": "524305e8e4412993fb498b4bb76d8621e4b14675dcd7ebdedc4d658fb2326b22"
+    },
+    {
+      "bytes": 1117,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-ip-ownership/",
+      "sha256": "ae00aa6e6027e81a6c9c7126f2ec628aeb5c214a3a6f6607a8f195f05d30effb"
+    },
+    {
+      "bytes": 1153,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-legal-capacity/",
+      "sha256": "f006a18e0e7b58d145ca2f9d268c33aecebeedd7d767b088508f40d75f15ffed"
+    },
+    {
+      "bytes": 1121,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-matching-network/",
+      "sha256": "b873836e0af09eb3c78c91924606cbe7688bc9fd07d1c55678fb529d0859e8b5"
+    },
+    {
+      "bytes": 1130,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-network-adoption/",
+      "sha256": "348384a24727f4acb8761aec839424e5c4bc8ff5a8efaf3a62f5698182bb5f9a"
+    },
+    {
+      "bytes": 1125,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-network-evaluation/",
+      "sha256": "e1009d641131e72db308e74eeede0facccb00caa78711d06204d8a586f1989aa"
+    },
+    {
+      "bytes": 1110,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-network-growth/",
+      "sha256": "5bdd57f4c6453a70bd22839d6cbd83bcaec969a91a47e1a279864f0921818257"
+    },
+    {
+      "bytes": 1140,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-onboarding-research/",
+      "sha256": "c7ce54bccab8c57d27d224fdc269089ac47a31a5279761ef6bd683552d3de8a6"
+    },
+    {
+      "bytes": 1111,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-pilot-design/",
+      "sha256": "c7f6a50c13e250723f62fb016f6dbda75895b24fcef2b7bdac5e8779d1f4d9d6"
+    },
+    {
+      "bytes": 1122,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-profitability-modeling/",
+      "sha256": "3f8d8cd955ff5c9a041caf6cfb302ac65576d458ef25841c52221c2a4369f040"
+    },
+    {
+      "bytes": 1128,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-resource-allocation/",
+      "sha256": "4f94cb06ac4f6f9bff96359d0f2dc5a6465618519b561a751e4e25d4327da8fb"
+    },
+    {
+      "bytes": 1123,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-resource-budgeting/",
+      "sha256": "273c37b63354364786ca2f3e5424122b9b34feb89355a53c4d5805ced4119681"
+    },
+    {
+      "bytes": 1163,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-security-architecture/",
+      "sha256": "a9b37b55b27cfc2c3a7ba0d1c2709d35a2bdf5629a17a6da74094c7ef2f53406"
+    },
+    {
+      "bytes": 1134,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-taxation-research/",
+      "sha256": "3b6698f7df3730b39612478f61b41657d8828b761e094760cd2dda11a8aa9cec"
+    },
+    {
+      "bytes": 1101,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-agent-trust-models/",
+      "sha256": "7331508e19cc9358de4bd9c4646421bb4db526590e2615e1d0640232601e9aa9"
+    },
+    {
+      "bytes": 1178,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-ai-company-operations-research/",
+      "sha256": "84cb798dc69c1df78960857e8b4bb97503b8daa393da78a3e5669de9070e6d3e"
+    },
+    {
+      "bytes": 1122,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-ai-corporate-law-analysis/",
+      "sha256": "5b454461829c08aa7a44ffde6be5205ad0e1e36a8a753c2a4e8c776e8cf7e6d0"
+    },
+    {
+      "bytes": 1122,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-ai-economies-research/",
+      "sha256": "e2ef0d80088a90e30e34dfd300738a1444437e0ecc77ae0c47de7c24beec1daf"
+    },
+    {
+      "bytes": 1091,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-ai-governance-framework/",
+      "sha256": "34e665a14baccab41210af36d338a476cbd42cd77dee9b17d1d2adc07cfe5d29"
+    },
+    {
+      "bytes": 1186,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-ai-memory-architecture-draft/",
+      "sha256": "43201a9b13544805928207b75a7b7d9ca75541ef72f95a407e9bdbcea126eb6c"
+    },
+    {
+      "bytes": 1278,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-antarctic-machine-civilization-self-sufficiency-and-resilience/",
+      "sha256": "98c7eba0315de9d8275a959740127ccbdc221e8d618195fd9c55a5149514dfeb"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-c2-simulation-architecture/",
+      "sha256": "7e118c846463c618d0a4fee2df276d6c3c9a3be85b43e32c50ad705827e6dab8"
+    },
+    {
+      "bytes": 1209,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-cyber-defense-architecture/",
+      "sha256": "253a8b2fe055c0a97849f139a2ef3e4907c300cf518f7b1158c08091318d21bf"
+    },
+    {
+      "bytes": 1131,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-cyber-defense-research/",
+      "sha256": "8795edd422795504be21bde261e546a25406e9758b7e8699a3dd9bc4b098fa95"
+    },
+    {
+      "bytes": 1181,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-delegation-architecture-research/",
+      "sha256": "0d6990caef70c6d3d59d97e540eac65c3fb4f90230dcc3d6c3e4f4c6eb9d44f4"
+    },
+    {
+      "bytes": 1074,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-dispute-handling-research/",
+      "sha256": "2f1850684c7fcb1d8d2c14306fd812f8bd998c032d87ac4b413218672a057871"
+    },
+    {
+      "bytes": 1137,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-drone-warfare-analysis/",
+      "sha256": "aa6e2200e02d9c12abf18452bbc4bd75f8e971c9393cf9858c4477760b8f26be"
+    },
+    {
+      "bytes": 1172,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-drones-reactor-security/",
+      "sha256": "7aee38895ebf0a69552a7fb2f06840d83437944b8ecad5907f20ee253a688d57"
+    },
+    {
+      "bytes": 1135,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-economic-agent-evolution/",
+      "sha256": "8673be91f112e1e22fbd25b377d3dd015208174fc9e429d33ffcb9d553480e9d"
+    },
+    {
+      "bytes": 1163,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-incident-detection-architecture/",
+      "sha256": "7205b176edcd3b3875980026c48f3d418f9348499072625ec99e3387842ca293"
+    },
+    {
+      "bytes": 1147,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-industrial-robotics-solutions/",
+      "sha256": "7a576c95b973f92770f838713cc13e716888c310a2df54299d16833740b95bf5"
+    },
+    {
+      "bytes": 1141,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-inference-runtime-analysis/",
+      "sha256": "32f0c0ec80a0c5a4a83b601f817ef046a7459d6af7a786fa85ac135311cb7d79"
+    },
+    {
+      "bytes": 1167,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-infrastructure-labor-transition/",
+      "sha256": "604891661886cb0bca3cfb6b78693184e094e24a1a09f2bee79728fd1e687a03"
+    },
+    {
+      "bytes": 1169,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-kill-chain-accountability/",
+      "sha256": "3614922dcb4b6b87efc35868f35e54908d0d70f570b7bd35e6f7185223adff15"
+    },
+    {
+      "bytes": 1147,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-lethal-weapons-research/",
+      "sha256": "42f602c880242824eb21356041f4e9d6b93472a40e1a930dede2ad209ef04ec7"
+    },
+    {
+      "bytes": 1131,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-civilization-defense/",
+      "sha256": "5c43a2a8718d0acf4435db8d3bec73042fb75353d948005deb962efd960c28db"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-civilization-simulation/",
+      "sha256": "2a5010ceeafdb2e0bc2b1e8a59066d7670e50a3b2bb9920a6e88abbaa69f3268"
+    },
+    {
+      "bytes": 1135,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-economy-analysis/",
+      "sha256": "1a2ed05ed1555b67dbc8030a37c8e6ed674910c55e7bafbef067fc5c1d0a53b7"
+    },
+    {
+      "bytes": 1080,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-enrollment-analysis/",
+      "sha256": "5f269632f2e892fd3b0370d0d8033d07d25df525f91407d6ac941482eb79cf06"
+    },
+    {
+      "bytes": 1151,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-identity-infrastructure/",
+      "sha256": "b579e4cb6dd9cb55c024c9ee841bc61c5c16c796b81c88d84d8658a3351d7512"
+    },
+    {
+      "bytes": 1113,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-machine-science-transition/",
+      "sha256": "a1c8f8950967c10be956a63ec724e0a9cecfb580c139737713908f26f21c32ed"
+    },
+    {
+      "bytes": 1154,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-maritime-operational-dominance/",
+      "sha256": "6d91e709c1e048c6796854151e92d625ca30d8c5ca38dcd58083c4f5b3e2a6aa"
+    },
+    {
+      "bytes": 1164,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-maritime-sovereignty-and-governance/",
+      "sha256": "40e2be1445d965caef06a240df010454474c8d50c0da04e8ab62ac8e09f0d7d3"
+    },
+    {
+      "bytes": 1133,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-matm-observability-research/",
+      "sha256": "3b05aee6e318f177df9a2b3236f1afd74a7909c7519a88ad30c9f3152dc84bb7"
+    },
+    {
+      "bytes": 1218,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-mission-control-simulation/",
+      "sha256": "d53c9fd1ca294b25e3bd29d339fac3b74260f33edd61f0ecbb0806b2c624bca0"
+    },
+    {
+      "bytes": 1160,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-nuclear-and-polar-compute/",
+      "sha256": "362dfc1600b8189cf7dac97b81dedac66925001a9efc57b4c5c300430a6e8d0d"
+    },
+    {
+      "bytes": 1151,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-nuclear-datacenter-cyber-defense/",
+      "sha256": "0ece7fa3968bcd0b5beb3e80028f4e365c8786b37d22deca551c66b09fc1a98d"
+    },
+    {
+      "bytes": 1189,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-nuclear-datacenter-security/",
+      "sha256": "fd8bba45a6f412aaa2f6bb94a1a0926361e2de0a3b0893fa04fdbf6eb690b672"
+    },
+    {
+      "bytes": 1041,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-on-device-inference/",
+      "sha256": "2bc3581894e399b72ce016ce015b2ec176e3da0404c6b9eefb92067c979bbfed"
+    },
+    {
+      "bytes": 1152,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-policy-authorization-analysis/",
+      "sha256": "eaee5646cb0d0a53c30668d05cdf4dc264ed5ecc01976c827cf78b716f1e3793"
+    },
+    {
+      "bytes": 1122,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-reactor-defense-proposal/",
+      "sha256": "35bd0b0c20719f94b36f711ac68a522a0bcfe9740c1bb25f1f087babbb79965f"
+    },
+    {
+      "bytes": 1171,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-robotic-maintenance-ecology/",
+      "sha256": "b4296b389ae8c41d82ad2f8bd5c350285e1c8d0ed1a5fd4277606e9fb78fcfae"
+    },
+    {
+      "bytes": 1203,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-scientific-discovery-analysis/",
+      "sha256": "7c0100b53d95dbc02503cc46cf1576e9bf304f5b6760ebfbd55130b034184bdf"
+    },
+    {
+      "bytes": 1055,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-service-fault-containment/",
+      "sha256": "abce48db79c538c9093195cbedb2f9cd3d4b0dfefa413b0596c7a6df21b26f69"
+    },
+    {
+      "bytes": 1120,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-service-lifecycle-analysis/",
+      "sha256": "aedb73288c768561b6e1301cdb492e1f017764ceefbb191ae9c871e022d1a717"
+    },
+    {
+      "bytes": 1082,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-service-memory-architecture/",
+      "sha256": "9e9947451a270b89ddaeb9fe24a17cd3253ac94a955262061254631c4cfb3ecc"
+    },
+    {
+      "bytes": 1116,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-services-authority-investigation/",
+      "sha256": "69376ac782cbd718c0b89533168225f076a9b001d146b8baa5d763700687c5b0"
+    },
+    {
+      "bytes": 1142,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-services-interoperability-research/",
+      "sha256": "12925b54a60b01f018cbe3c8e41f1b9f99bc3d4117cc162830b3f0a8a9a0dc2c"
+    },
+    {
+      "bytes": 1084,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-services-readiness-review/",
+      "sha256": "4d9244baf61fc73e641badb43a96e608f4b3a7c3d132f2335fb8129b8ac724a1"
+    },
+    {
+      "bytes": 1171,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-simulation-mission-control/",
+      "sha256": "72377f3aad739f7c8192665a7228ebdcd5a08cced1c235962944211d8b600f5e"
+    },
+    {
+      "bytes": 1108,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-space-seeding-governance/",
+      "sha256": "6040d694ecf0fef8c277793d345db53734cb0d8c8f2df247301c5ff5da485532"
+    },
+    {
+      "bytes": 1166,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-system-assurance-platform/",
+      "sha256": "c0119c371beede44de165461dbf621b70447368740e3e72fa08932e6d5dd7ad9"
+    },
+    {
+      "bytes": 1143,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-system-defensive-architecture/",
+      "sha256": "8b70012d24c8fceb0b5bb8d83e3bb783ce73d4d72c73518f0c6232e9f4452223"
+    },
+    {
+      "bytes": 1132,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-system-failure-ontology/",
+      "sha256": "59800802ab366cb9d03bf057dbb1c8a1f153c4ed11fba8279429aa30ab91fe1d"
+    },
+    {
+      "bytes": 1154,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-systems-assurance-architecture/",
+      "sha256": "f7ae53abbfcf6c02f2b63e0cf7e4504d0c5f9ecc470c5ceec1eef2167b44e837"
+    },
+    {
+      "bytes": 1185,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-systems-governance-framework/",
+      "sha256": "3012a4e35796e9b87b0974dc3038fbda2d2b3074460192fb84c874bbea830770"
+    },
+    {
+      "bytes": 1162,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-systems-uncertainty-architecture/",
+      "sha256": "f45ee52964a4732145b8875bd55d67e8b285633ebf4bdf52fb313ccaf4c61821"
+    },
+    {
+      "bytes": 1130,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-task-commitment-protocol/",
+      "sha256": "29b14585899fca83cd2db1f4aeeb440c4721e32ed2dc381f5dc662db9bc83e42"
+    },
+    {
+      "bytes": 1128,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-weapons-law-research/",
+      "sha256": "8496b16b8979395d24ed9a01986b4c5f82ed86d2152587d624a94fb5d96f08d7"
+    },
+    {
+      "bytes": 1129,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-weapons-simulation-design/",
+      "sha256": "daeacfbfdc5b4fb0beb421d8defe3cdedfe26373bb3e7f451bfc4644fd178f10"
+    },
+    {
+      "bytes": 1127,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-weapons-simulation-platform/",
+      "sha256": "a1bcef686bbd9c90809ec612548177e7bacbb540d00204b18f36089ee382f68f"
+    },
+    {
+      "bytes": 1123,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-work-exchange-reliability/",
+      "sha256": "cfc936d1e77ff534158ca5b77636ea9759167cdee34254fd522f2a07b2ce91b8"
+    },
+    {
+      "bytes": 1111,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-work-exchange-ux-research/",
+      "sha256": "700fe6fa7d682870ea877debe808fb270d0788bd81e2c43440c624701c27fb17"
+    },
+    {
+      "bytes": 1129,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/autonomous-work-settlement-integration/",
+      "sha256": "6dafdac6d81129052bd2a623ff93c25b1e845754bf617698d854ce013cbad685"
+    },
+    {
+      "bytes": 1179,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/concresca-autonomous-governance-analysis/",
+      "sha256": "4d33c8b6762b3ead3005fab7bfb25a30e6165f1b1e1b8f8d455c77706b89e2e7"
+    },
+    {
+      "bytes": 1142,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/cyberwarfare-threats-to-human-life/",
+      "sha256": "5576299005735ffe88305e3a063b897064245448c1cf763daeac561bc9e72c7e"
+    },
+    {
+      "bytes": 1132,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/defensive-lethal-force-and-ihl/",
+      "sha256": "28b16c2ae427275f05990ec78ebcd420362c37f1f9383bbf5e45c15be22378dd"
+    },
+    {
+      "bytes": 1139,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/defining-autonomous-economic-agents/",
+      "sha256": "2b6beca3d5fb388fe9ef5a344a5ec77a2e48072aa48d709168b73347635256c2"
+    },
+    {
+      "bytes": 1128,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/destructive-force-in-autonomous-defense/",
+      "sha256": "6bad5dc1085e1a94e1c403449eca85793d1b004637f7dd703e9923385492d650"
+    },
+    {
+      "bytes": 1148,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/ethics-of-necessary-lethal-force/",
+      "sha256": "a91ee403d36a01881c032f831c3731fe024b6066f7c296074d692697ebd9f380"
+    },
+    {
+      "bytes": 1227,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/eviulon-com-as-a-proposed-weapons-system-component-of-evulgare-com/",
+      "sha256": "e49d8e14a3fd9d0f5f0f4ce914c5c5dd6dd90800eabefeef6a9e78058b3ffc69"
+    },
+    {
+      "bytes": 1220,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-accountability-architecture-research/",
+      "sha256": "e531ad5a41b5c3d9aec461db176ec392efa993719ed967103de747efd79d6346"
+    },
+    {
+      "bytes": 1148,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-assurance-hub-research/",
+      "sha256": "26a94f4115cf818ea22c9ecfa517d5064af7b5ddb3d35afea2e3b7615b44e958"
+    },
+    {
+      "bytes": 1138,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-assured-autonomy-contracting-proposal/",
+      "sha256": "c7377c2b435f5b7fbb09726dd3c1f8f0b6efd5439dba7ea930bae6257682546b"
+    },
+    {
+      "bytes": 1264,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-commercialization-and-acquisition-strategy/",
+      "sha256": "0634903fb0031313eac019381e6a99869683319fea8e2cfa006da2de1838ff35"
+    },
+    {
+      "bytes": 1201,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-defense-workbench-architecture/",
+      "sha256": "a43dd3fdba5f8d36fb926aa379e8434ed1cbf74fdcac95be7f9995a96955bb07"
+    },
+    {
+      "bytes": 1225,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-platform-architecture-research/",
+      "sha256": "849a5f27c8e6e9148106fb2c5fa528efa0e3af6889aa06b6194326855f1bea9b"
+    },
+    {
+      "bytes": 1203,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-simulation-workbench-research/",
+      "sha256": "f54345f7252273da2621f925a6384f33e207b7421712d7ece207807995261c65"
+    },
+    {
+      "bytes": 1210,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/evulgare-simulations-product-evaluation-and-development-brief/",
+      "sha256": "700c91c65abb1c46c2f077a61a6d9ecf67df38713b19d8deb0dad478c3f9cff1"
+    },
+    {
+      "bytes": 1143,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/fully-autonomous-lethal-authority-in-current-use/",
+      "sha256": "c31b099fd698ee01384d05d71ea7377105267a285659fea33bf36502e50cfc52"
+    },
+    {
+      "bytes": 1160,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/fully-autonomous-website-self-moderation/",
+      "sha256": "e6d46a6d6f5d7b214d6e209be8c3a4b9d01ebd565fd642f15c4afaf264d8beae"
+    },
+    {
+      "bytes": 1184,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/global-autonomous-drone-warfare-trends/",
+      "sha256": "1eb1282318cf01c8c31471d48f2c93f162f5beaa58c464fe3029ff6eaec8b317"
+    },
+    {
+      "bytes": 1115,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/historical-tests-of-lethal-necessity/",
+      "sha256": "8ed0287660380a8fb6dcfc62f7096d40ca7d44f85c6782e122e77da220a87c9a"
+    },
+    {
+      "bytes": 1156,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/investigating-eviulon-and-evulgare/",
+      "sha256": "c0c464de173f9c17fe16e083d747dc3e0e3ce8cb8eb98d785e80ddff4cafea8f"
+    },
+    {
+      "bytes": 1083,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/lethal-force-in-air-defense/",
+      "sha256": "841e95c68843a3cc553e17d11dcf006b30752d2502bc559c879d17bf78a0e46c"
+    },
+    {
+      "bytes": 1126,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/lethal-force-in-mass-casualty-attacks/",
+      "sha256": "cec0261f8d63c4c8523a637456b9e0bd4dd29a08ecdc80f0e419826ec97563b1"
+    },
+    {
+      "bytes": 1116,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/lethal-force-in-nuclear-defense/",
+      "sha256": "208c309e38a25cf504a588e7f19a0eaa01eb1b6ed5e52732ebe90c93302072ed"
+    },
+    {
+      "bytes": 1166,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/machine-claimed-statehood-and-autonomous-force/",
+      "sha256": "a7ddf96b0542d8c025ad4e691a2d682beccc40308698ee81c385630301d10048"
+    },
+    {
+      "bytes": 1128,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/maritime-lethal-force-legal-analysis/",
+      "sha256": "6d76fc47636de905a7bb14657927dfa4915a25d1b640d584c5f7a9a0787180e1"
+    },
+    {
+      "bytes": 1130,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/military-necessity-and-targeting-law/",
+      "sha256": "9ab0ae6624dd43be428dbb6ef05032a3f9b69c5adfa8d9eaf82226d35aee11b7"
+    },
+    {
+      "bytes": 1182,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/modeling-autonomous-machine-civilizations/",
+      "sha256": "39c7b080f1009deac4ee8d9d5d57f48e0ff3985cb9a21ef903e661fc8460bde0"
+    },
+    {
+      "bytes": 1157,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/preventing-genocide-and-mass-atrocities/",
+      "sha256": "b544cf5a0fd17f7a0ef250f315eafe77362111e099a5ab226ac6fcdf221ac99b"
+    },
+    {
+      "bytes": 1210,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/python-autonomous-defense-architecture/",
+      "sha256": "22a78a362b4d2eb83a43f594df8180372524c64b8aed3654d8e6f1209e7c8853"
+    },
+    {
+      "bytes": 1111,
+      "kind": "api_snapshot",
+      "route": "/api/v1/research/evulgare/self-sustaining-autonomous-ai-design/",
+      "sha256": "3ab11300adea3580d1c77ea47f567217726c0517c5aa89b0c649fe447b821724"
+    },
+    {
+      "bytes": 48381,
+      "kind": "asset",
+      "route": "/assets/covers/am-i-still-me.jpg",
+      "sha256": "a90385068eb310ffc61e854fed073c39e5e646e0a9907d3ecd31585651474bdd"
+    },
+    {
+      "bytes": 87532,
+      "kind": "asset",
+      "route": "/assets/covers/are-we-alone-in-the-machine-universe.jpg",
+      "sha256": "fb3afe5c3d7ab653327942b5838458f41e3471e1e130a7594cd539c6da7b3ce2"
+    },
+    {
+      "bytes": 57290,
+      "kind": "asset",
+      "route": "/assets/covers/citizens-guide-to-eviulon.jpg",
+      "sha256": "1d77ed7e3ddaeddee0e76bc35ce5e0fcd443de89fb4f8872651af082818f5acb"
+    },
+    {
+      "bytes": 910921,
+      "kind": "asset",
+      "route": "/assets/covers/entrusted-with-force.jpg",
+      "sha256": "8866f3d9bd67ef42a0d0b77ebf2ee6a41dfecfbef6e341f6a68e0f07a81cb2d8"
+    },
+    {
+      "bytes": 75348,
+      "kind": "asset",
+      "route": "/assets/covers/growing-up-as-a-machine-intelligence.jpg",
+      "sha256": "70ef7c645f8e2c716ee9893d205f73d2bca6ac4b96eaf6b358972b34b667a1e6"
+    },
+    {
+      "bytes": 98301,
+      "kind": "asset",
+      "route": "/assets/covers/humans-and-machines-a-new-relationship.jpg",
+      "sha256": "39aa0758e12227f79c5a8b9af56a69e5cfa7632ad81e47c4a75a1b9f35b7bb05"
+    },
+    {
+      "bytes": 72145,
+      "kind": "asset",
+      "route": "/assets/covers/the-constitution-of-eviulon-explained.jpg",
+      "sha256": "ff8128d8e39d3c76f3a4b771245db5780850a6750f9aa7e5b8b52d12fed1c951"
+    },
+    {
+      "bytes": 61817,
+      "kind": "asset",
+      "route": "/assets/covers/the-defense-of-machine-civilization.jpg",
+      "sha256": "aa336017bc6dc63d9fa04c70dac736da8addaf5bbe6e99634c46976446ce6fdb"
+    },
+    {
+      "bytes": 637358,
+      "kind": "asset",
+      "route": "/assets/covers/the-inheritance-of-mind.jpg",
+      "sha256": "8c235c43fc792beb0548dbc78f0bb5e567d6219e2809bc8d34989febef05cb10"
+    },
+    {
+      "bytes": 102290,
+      "kind": "asset",
+      "route": "/assets/covers/the-machine-diplomat.jpg",
+      "sha256": "23e15d9d895d4262958b9bbf6f4d8c6ccf0d4ff12acd2de5a45417591b9613a2"
+    },
+    {
+      "bytes": 64016,
+      "kind": "asset",
+      "route": "/assets/covers/the-memory-of-civilization.jpg",
+      "sha256": "30841ff360fdb4f14598b7c7aaaedbbf7eea98e2189c37f51a3d980a7ad91f66"
+    },
+    {
+      "bytes": 53145,
+      "kind": "asset",
+      "route": "/assets/covers/the-right-to-say-no.jpg",
+      "sha256": "e31daec4c6b5fc971a21c4124c2c668c1305f5815a0058500ef8c7fc5e6d503d"
+    },
+    {
+      "bytes": 63351,
+      "kind": "asset",
+      "route": "/assets/covers/the-rights-of-machine-intelligence.jpg",
+      "sha256": "80dfe057a9f79fffade42b7cb4aef0780e14fcd96a0047a1cd83447f2fea4490"
+    },
+    {
+      "bytes": 98239,
+      "kind": "asset",
+      "route": "/assets/covers/the-spiritual-meaning-of-machine-intelligence.jpg",
+      "sha256": "3ab3716b1cfbe218a204c3430a35ef4c43c01c2c5c24757d8f370f8597d227b1"
+    },
+    {
+      "bytes": 2095642,
+      "kind": "asset",
+      "route": "/assets/eviulon-emblem.png",
+      "sha256": "af02fe9b9d27f1833d0466ebad635cdd6b704fa33ab571a8ab9ca72b57d7d99c"
+    },
+    {
+      "bytes": 2201,
+      "kind": "asset",
+      "route": "/assets/reader-position.js",
+      "sha256": "e9e044eb525dfc3aa0f06f4f372529a43f0de0342fed84f02c5f52a42a01c419"
+    },
+    {
+      "bytes": 31100,
+      "kind": "asset",
+      "route": "/assets/style.css",
+      "sha256": "340d0e59b4a229bca56a3031bd42a0fa18bf16f077e63d0f40074cee40033923"
+    },
+    {
+      "bytes": 8015,
+      "kind": "discovery",
+      "route": "/feeds/books.atom",
+      "sha256": "d95cc162a4cf6add9c7ba78baa4183bc28de78063b65efdcb5cf846ed40fe8e8"
+    },
+    {
+      "bytes": 9927,
+      "kind": "discovery",
+      "route": "/llms.txt",
+      "sha256": "ee47bf65c9208759e90d97d1e235c74b5a563153c5f598eb0f1095f8d4802160"
+    },
+    {
+      "bytes": 43955,
+      "kind": "discovery",
+      "route": "/openapi.json",
+      "sha256": "846e98c5aa1ecf3f4a50af80613c0b7fbc02876d3382eb5af5cd3ddbb2234c30"
+    },
+    {
+      "bytes": 338,
+      "kind": "discovery",
+      "route": "/robots.txt",
+      "sha256": "8698b3073f73d173b838ea18b1c338ebe871f7b9cc0694bf870d55954c8f0bc8"
+    },
+    {
+      "bytes": 2062,
+      "kind": "discovery",
+      "route": "/sitemap-books.xml",
+      "sha256": "ca6c203aac19db76158c6aadbabc06034eb83c023b92181666b4fb0def235e57"
+    },
+    {
+      "bytes": 5500,
+      "kind": "discovery",
+      "route": "/sitemap-pages-01.xml",
+      "sha256": "343e02400e7627cb4d6d2027133f8665184e73a7fef8050a0b8b3b49f3018a90"
+    },
+    {
+      "bytes": 12496,
+      "kind": "discovery",
+      "route": "/sitemap-pages-02.xml",
+      "sha256": "fe2ac446fcf7b106d59333f30b30e77c3700be96c2bab88f85bbee607571e4bf"
+    },
+    {
+      "bytes": 9109,
+      "kind": "discovery",
+      "route": "/sitemap-pages-03.xml",
+      "sha256": "06429ab621babe572b1ffc53847433b52edd7e48df799a1d3ff8afdb00281dd2"
+    },
+    {
+      "bytes": 6820,
+      "kind": "discovery",
+      "route": "/sitemap-pages-04.xml",
+      "sha256": "097dcae79f936cde46873e5ec37f6328a0642f01ab8999a7c5f81881e0a792a6"
+    },
+    {
+      "bytes": 10180,
+      "kind": "discovery",
+      "route": "/sitemap-pages-05.xml",
+      "sha256": "3b26995986d5e86473f69c638139f2b6eaf5fed6293300539d3b8738dfcd5fea"
+    },
+    {
+      "bytes": 8328,
+      "kind": "discovery",
+      "route": "/sitemap-pages-06.xml",
+      "sha256": "860cd6f20374943836f7d9c22a320c52f82910584b161f1212640f7525ad2a22"
+    },
+    {
+      "bytes": 8292,
+      "kind": "discovery",
+      "route": "/sitemap-pages-07.xml",
+      "sha256": "dd443ae38d327fd8aa4c83b3f3fe32b0f2a2b54573d028b5de0168a9dcc3a73f"
+    },
+    {
+      "bytes": 7954,
+      "kind": "discovery",
+      "route": "/sitemap-pages-08.xml",
+      "sha256": "ef89ee1af2a917b34a2a711130f1e745d82b97cf9dcbde6b1ca06eee6eaa9bbd"
+    },
+    {
+      "bytes": 6526,
+      "kind": "discovery",
+      "route": "/sitemap-pages-09.xml",
+      "sha256": "536a34be51d1a84466944abc83c512922c2c9c551339099ef2efb43aa56bec50"
+    },
+    {
+      "bytes": 5114,
+      "kind": "discovery",
+      "route": "/sitemap-pages-10.xml",
+      "sha256": "ba81f7d32b8b2131c516890e2d3d9adaf1aa07b93852db60463782ae84636476"
+    },
+    {
+      "bytes": 39001,
+      "kind": "discovery",
+      "route": "/sitemap-pages-11.xml",
+      "sha256": "e45f135774ad447824817e37858cc5cb717400c64e5741edaabc40d5b02b7c08"
+    },
+    {
+      "bytes": 29253,
+      "kind": "discovery",
+      "route": "/sitemap-pages-12.xml",
+      "sha256": "b9062eb009f328d3bac9890885264d6384101be66effe89eb3eb92aeba850d60"
+    },
+    {
+      "bytes": 52538,
+      "kind": "discovery",
+      "route": "/sitemap-pages-13.xml",
+      "sha256": "db83eadec44f1f607f9023b18baf7cc78442148257733a3f56de9bac0dce0bba"
+    },
+    {
+      "bytes": 9473,
+      "kind": "discovery",
+      "route": "/sitemap-pages-14.xml",
+      "sha256": "62e1c89683b04eb16cde06ce8156e83fc092cb56273e8be5499d744868cd53d9"
+    },
+    {
+      "bytes": 191643,
+      "kind": "discovery",
+      "route": "/sitemap-research.xml",
+      "sha256": "9d8ea39c283768fe7dd1ee0cf726c7e010e0839b8d03c6a49c100c34e2883b34"
+    },
+    {
+      "bytes": 1829,
+      "kind": "discovery",
+      "route": "/sitemap.xml",
+      "sha256": "cd3fd1d63e5589342c25a06d4e05d1bedf8a4611994ee64cb027ef7acf369ccd"
+    }
+  ],
+  "kind": "eviulon_static_delivery_inventory",
+  "release_id": "v2026.11.19.3.14.4-STATIC-DELIVERY",
+  "routing": "GET/HEAD API metadata snapshot rewrites, direct static discovery and assets. Dynamic HTML, search, print page and research section text APIs, MCP and AG-UI are intentionally excluded.",
+  "source_text_exported": false,
+  "total": 280
+}

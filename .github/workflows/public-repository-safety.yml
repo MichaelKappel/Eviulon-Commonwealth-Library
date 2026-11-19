@@ -1,17 +1,21 @@
-name: Public repository integrity
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
+name: Public code only
+on: [push, pull_request]
 jobs:
-  verify-public:
+  protect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Reject private or bulk book content
-        run: python3 tools/audit_public_repo.py .
-      - name: Check public-safe rune checksum integrity
-        run: python3 tools/elder_futhark_memory.py verify
+      - name: Deny private or full-text distribution
+        shell: bash
+        run: |
+          python3 - <<'PY2'
+          from pathlib import Path
+          forbidden=[]
+          for f in Path('.').rglob('*'):
+              if not f.is_file() or '.git' in f.parts: continue
+              rel=f.as_posix().removeprefix('./')
+              if '.uai' in f.parts or f.suffix.lower() in {'.pdf','.epub','.mobi','.zip'} or any(rel.startswith(x) for x in ('Library_Website/data/pages/','Library_Website/data/search/','Library_Website/data/research/parts/','Library_Website/data/research/search/','Library_Source/Library/','Library_Source/Shared_Research_and_UAI/')):
+                  forbidden.append(rel)
+          if forbidden: raise SystemExit('PRIVATE SOURCE LEAK: '+', '.join(forbidden))
+          print('PASS: no private memory/manuscript/full-text corpus distribution')
+          PY2

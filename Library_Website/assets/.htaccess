@@ -1,0 +1,5 @@
+# Public assets are unchanging within a released ZIP. Preserve fast revalidation.
+Options -Indexes
+<IfModule mod_headers.c>
+  Header always set Cache-Control "public, max-age=3600, stale-while-revalidate=86400"
+</IfModule>

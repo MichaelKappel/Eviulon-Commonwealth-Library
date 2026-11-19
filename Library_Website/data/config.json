@@ -1,9 +1,1 @@
-{
-  "source_archive": "Local private production source; not included in public GitHub repository",
-  "print_page_rule": "1-indexed physical pages of each standalone paperback interior PDF (including front matter); printed folios use the same page numbers on inspected interiors",
-  "books": 14,
-  "pages": 1925,
-  "reading_words": 380091,
-  "new_books_source_version": "v2026.11.17.54",
-  "publication_note": "Private source archive is never deployed; new online page text is extracted from active working paperback interiors. Rights and editorial approvals pending."
-}
+{"source_archive":"Eviulon_Complete_Library_FULL_v2026.11.17.54_PRIVATE.zip","print_page_rule":"1-indexed physical pages of each standalone paperback interior PDF (including front matter); printed folios use the same page numbers on inspected interiors","books":14,"pages":1925,"reading_words":380091,"new_books_source_version":"v2026.11.17.54","publication_note":"Private source archive is never deployed; new online page text is extracted from active working paperback interiors. Rights and editorial approvals pending."}

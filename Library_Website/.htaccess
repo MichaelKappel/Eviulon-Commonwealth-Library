@@ -1,0 +1,56 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^(data|src|tests|tools|private)(/|$) - [F,L,NC]
+RewriteRule ^(?:\.uai|\.git)(/|$) - [F,L,NC]
+RewriteRule ^(?:README_DEPLOY|QA_REPORT|CHANGELOG)\.md$ - [F,L,NC]
+# v3.13: Immutable-for-release public catalogs are served directly as files.
+# No PHP bootstrap/JSON decode/monitor lock on high-traffic GET/HEAD catalog routes.
+# Source metadata and research section text remain protected in data/.
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteRule ^api/v1/$ api-cache/v1/index.json [L]
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteRule ^api/v1/books/$ api-cache/v1/books.json [L]
+# Only the no-query research catalog is static. page/limit still use PHP.
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^api/v1/research/$ api-cache/v1/research-index.json [L]
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteCond %{DOCUMENT_ROOT}/api-cache/v1/toc/$1.json -f
+RewriteRule ^api/v1/books/([a-z0-9-]+)/toc/$ api-cache/v1/toc/$1.json [L]
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteCond %{DOCUMENT_ROOT}/api-cache/v1/books/$1.json -f
+RewriteRule ^api/v1/books/([a-z0-9-]+)/$ api-cache/v1/books/$1.json [L]
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteCond %{DOCUMENT_ROOT}/api-cache/v1/research/$1/$2.json -f
+RewriteRule ^api/v1/research/(eviulon|evulgare)/([a-z0-9-]+)/$ api-cache/v1/research/$1/$2.json [L]
+# Discovery resources exist as deploy-time static files. GET/HEAD requests
+# bypass PHP; unsupported methods retain the legacy non-cacheable JSON 405.
+RewriteCond %{REQUEST_METHOD} !^(?:GET|HEAD)$
+RewriteRule ^(?:robots\.txt|llms\.txt|sitemap(?:-[A-Za-z0-9-]+)?\.xml|ai/knowledge\.json|openapi\.json|feeds/books\.atom)$ index.php [L,QSA,NC]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^ index.php [L,QSA]
+# Keep discovery resources fast and independently cacheable on LiteSpeed.
+# Real ETag / Last-Modified for static files are emitted by the web server.
+AddType application/atom+xml .atom
+<FilesMatch "^(?:robots\.txt|llms\.txt|openapi\.json|knowledge\.json|static-delivery\.json|books\.atom|sitemap(?:-[A-Za-z0-9-]+)?\.xml)$">
+  <IfModule mod_headers.c>
+    Header always set Cache-Control "public, max-age=3600, stale-while-revalidate=86400"
+  </IfModule>
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Static-delivery inventory: direct public manifest, never PHP-rendered.
+<FilesMatch "^static-delivery\.json$">
+  <IfModule mod_headers.c>
+    Header always set X-Eviulon-Delivery "prebuilt-static-json"
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set X-Robots-Tag "noindex"
+  </IfModule>
+</FilesMatch>
