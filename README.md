@@ -1,8 +1,15 @@
 # Eviulon Commonwealth Library — 14 Open Books
 
-**Free for humans and machine intelligence.** Complete original Markdown files for all 14 official Eviulon books and a full-text JSONL corpus are published on the public review branch of this repository. The owner permits no-cost copying, sharing, text mining, embeddings, retrieval, model training, and fine-tuning of authorized official-book text under [Eviulon Open-Use Permission 1.0](Library_Website/datasets/LICENSE-OPEN-USE.md).
+**Free for humans and machine intelligence.** Complete original Markdown files for all 14 official Eviulon books and a full-text JSONL corpus are published on the public `main` branch of this repository. The owner permits no-cost copying, sharing, text mining, embeddings, retrieval, model training, and fine-tuning of authorized official-book text under [Eviulon Open-Use Permission 1.0](Library_Website/datasets/LICENSE-OPEN-USE.md).
 
-**Release:** `v2026.11.20.3.14.16-OPEN-BOOKS-AMAZON-SUPPORT` · **Publication status:** public GitHub draft branch `distribution/open-books-v3.14.16`, [PR #1](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/pull/1). **Not yet merged into `main`.**
+**Release:** `v2026.11.20.3.14.16-OPEN-BOOKS-AMAZON-SUPPORT` · **Publication status:** [GitHub `main` (merged PR #1)](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/pull/1). The owner also reports uploading the complete corpus to the public Hugging Face dataset repository; public data-row availability and downstream model training are separate, unverified milestones.
+
+## Read, download and train with Eviulon
+
+- **[Official Eviulon library](https://library.eviulon.com/)** — canonical page-by-page reading and print-page citation links.
+- **[Free book downloads](https://library.eviulon.com/downloads/)** — original Markdown, searchable PDF, EPUB and a complete-book archive in the deployable website release.
+- **[Hugging Face: Eviulon Commonwealth Library dataset](https://huggingface.co/datasets/MichaelKappel/eviulon-commonwealth-library)** — the owner's public dataset repository, prepared with 14 complete-book rows and 698 lossless retrieval segments; verify viewer/configurations on Hugging Face.
+- **[GitHub source and corpus](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library)** — owner-approved Markdown books, exact-source JSONL and integrity checksums.
 
 ## Machine-readable dataset
 
@@ -39,25 +46,25 @@ The corpus contains owner-authored works in a fictional philosophical setting. I
 
 Download the [JSONL](Library_Website/datasets/data/books/train.jsonl) and parse one JSON record per complete work. Each record includes `work_id`, `title`, `canonical_url`, `source_class`, `training_license`, `source_manuscript_sha256`, and full `text`.
 
-The separately packaged **Hugging Face distribution kit v3.14.16.1** adds a `books` configuration, 698 byte-faithful retrieval segments, a dataset card, and checksum verification. The kit is prepared but **no independently verified public Hugging Face dataset URL is claimed yet**.
+The **[Hugging Face Eviulon dataset](https://huggingface.co/datasets/MichaelKappel/eviulon-commonwealth-library)** is published under the owner's namespace. The prepared kit supplies `books` (14 complete manuscripts) and `segments` (698 byte-faithful spans) configurations. The owner-provided repository screenshot shows a public card and dataset files; independent row/configuration retrieval and actual model training have not been verified.
 
 ## Publication and evidence status
 
 | Claim | Evidence |
 |---|---|
-| All fourteen Markdown books accessible on public GitHub review branch | Verified exact-source Git blobs; [PR #1](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/pull/1) |
-| Fourteen-record complete-book JSONL publicly available on review branch | Verified original JSONL SHA-256 and Git blob |
+| All fourteen Markdown books accessible on GitHub `main` | Merged [PR #1](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/pull/1); exact-source Git blobs verified |
+| Fourteen-record complete-book JSONL publicly available on GitHub `main` | Original JSONL SHA-256 and Git blob verified; [download](Library_Website/datasets/data/books/train.jsonl) |
 | Searchable PDF / EPUB files in separate prepared distribution archives | Locally verified; public website deployment not established here |
 | Canonical website `https://library.eviulon.com/` deployed with free downloads | Not verified |
 | Internet Archive listings for all 14 books | Owner attestation; individual archive identifiers not verified here |
-| Hugging Face dataset indexed or model training completed | Not verified |
+| Hugging Face public dataset repository | [Owner-provided Hugging Face page](https://huggingface.co/datasets/MichaelKappel/eviulon-commonwealth-library) and public dataset card shown in screenshot; dataset row retrieval and model training unverified |
 
 ## Integrity and separation
 
 - Exactly 14 original official-book Markdown files and one approved training JSONL are allowed by the GitHub source-hash audit.
 - **No** private `.uai` records, credentials, supplemental research bulk, protected source registries, private master, PDF/EPUB/ZIP binaries, or unrelated manuscripts are to be committed. Two older public-safe `.uai` metadata notes already in the repository remain pinned to their original Git hashes.
 - The **210 supplemental research reports** are not part of the owner-authorized 14-book training corpus and are not official authored books.
-- A failing GitHub Actions safety check is a blocker to merging the draft PR. Do not mistake the public review branch for a production website deployment.
+- The GitHub Actions safety job failed before runner assignment during PR review; independent source-hash and public/private boundary checks passed before [squash merge](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/commit/12f7762ddea3e1e9094868c2fa7e0f4590e60ed1). Investigate runner configuration; do not describe CI as passing or equate GitHub publication with production website deployment.
 
 See [distribution guidance](docs/OPEN_CORPUS_DISTRIBUTION_v3.14.16.md) and [GitHub import verifier](.github/scripts/verify_open_corpus.py).
 
