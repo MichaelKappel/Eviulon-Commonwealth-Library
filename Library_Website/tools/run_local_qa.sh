@@ -16,6 +16,13 @@ command -v php >/dev/null || { echo 'PHP CLI is required'; exit 1; }
 command -v python3 >/dev/null || { echo 'Python 3 is required'; exit 1; }
 echo '1/15 Static corpus and content integrity'
 php "$ROOT/tools/build_api_snapshots.php" --check
+python3 "$ROOT/tools/test_static_html_cache_integrity.py"
+python3 "$ROOT/tools/build_static_html.py" --check
+python3 "$ROOT/tools/build_topics.py" --check
+python3 "$ROOT/tools/build_source_registry.py" --check
+python3 "$ROOT/tools/build_discovery_attestation.py" --check
+python3 "$ROOT/tools/test_discovery_attestation.py"
+python3 "$ROOT/tools/test_jsonld_entity_alignment.py"
 python3 "$ROOT/tools/build_static_delivery_manifest.py" --check
 python3 "$ROOT/tools/verify_content_integrity.py" --root "$ROOT"
 python3 "$ROOT/tools/validate_release.py" --root "$ROOT"
@@ -55,6 +62,12 @@ PY
 echo '5/15 Existing search/API/AG-UI contract'
 python3 "$ROOT/tools/validate_agent_api.py" --http "$EVIULON_QA_URL"
 python3 "$ROOT/tools/test_static_delivery.py" --http "$EVIULON_QA_URL" --all
+python3 "$ROOT/tools/test_static_html_delivery.py" --http "$EVIULON_QA_URL"
+python3 "$ROOT/tools/test_topics.py" --http "$EVIULON_QA_URL"
+python3 "$ROOT/tools/test_source_registry.py" --http "$EVIULON_QA_URL"
+python3 "$ROOT/tools/test_discovery_attestation.py" --http "$EVIULON_QA_URL"
+python3 "$ROOT/tools/test_jsonld_entity_alignment.py" --http "$EVIULON_QA_URL"
+python3 "$ROOT/tools/audit_live_discovery.py" --base-url "$EVIULON_QA_URL"
 python3 "$ROOT/tools/test_research_navigation.py" --root "$ROOT" --http "$EVIULON_QA_URL"
 echo '6/15 Independent pagination and exact source-filter facets'
 python3 "$ROOT/tools/test_independent_search.py" --http "$EVIULON_QA_URL"

@@ -25,6 +25,22 @@ foreach(all_books() as $book) {
 foreach(research_records() as $report) {
     $expected['api-cache/v1/research/'.$report['id'].'.json']=api_research_metadata_payload($report);
 }
+// These citation endpoints already exist; snapshot their exact PHP response
+// objects without exporting any underlying book or research-section text.
+foreach(all_books() as $book) {
+    for($page=1;$page<=(int)$book['page_count'];$page++) {
+        $citation=agent_book_reference($book,$page);
+        if($citation===null) {fwrite(STDERR,"Missing canonical book page citation\n");exit(1);}
+        $expected['api-cache/v1/citations/books/'.$book['slug'].'/'.$page.'.json']=$citation;
+    }
+}
+foreach(research_records() as $report) {
+    for($part=1;$part<=(int)$report['parts'];$part++) {
+        $citation=agent_report_reference($report,$part);
+        if($citation===null) {fwrite(STDERR,"Missing canonical research citation\n");exit(1);}
+        $expected['api-cache/v1/citations/research/'.$report['id'].'/'.$part.'.json']=$citation;
+    }
+}
 $errors=[];$bytes=0;
 foreach($expected as $relative=>$payload) {
     $file=$root.'/'.$relative;
@@ -45,6 +61,8 @@ foreach($expected as $relative=>$payload) {
 }
 // Stale metadata from a removed report or book must never remain public.
 $generated=glob($root.'/api-cache/v1/{books,toc,research/eviulon,research/evulgare}/*.json',GLOB_BRACE) ?: [];
+foreach(glob($root.'/api-cache/v1/citations/books/*/*.json') ?: [] as $file) $generated[]=$file;
+foreach(glob($root.'/api-cache/v1/citations/research/*/*/*.json') ?: [] as $file) $generated[]=$file;
 foreach($generated as $file) if (!array_key_exists(substr($file,strlen($root)+1),$expected)) $errors[]=substr($file,strlen($root)+1).' stale extra';
 echo strtoupper(substr($mode,2)).': '.count($expected).' public JSON snapshots, '.number_format($bytes).' bytes';
 if($errors){echo '; FAIL '.count($errors)."\n";foreach(array_slice($errors,0,15) as $err)echo "  ".$err."\n";exit(1);}

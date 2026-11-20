@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/src/bootstrap.php';
+require_once __DIR__ . '/src/topics.php';
 require_once __DIR__ . '/src/research.php';
 require_once __DIR__ . '/src/agent.php';
 require_once __DIR__ . '/src/api_snapshots.php';
@@ -17,13 +18,14 @@ monitor_register($path,$method);
 if ($path==='/mcp/' || $path==='/mcp') mcp_router($method);
 // Safety fallback for hosts that route static discovery resources through PHP.
 // Normally LiteSpeed/Apache serves these files directly, bypassing PHP entirely.
-if (in_array($path, ['/robots.txt', '/llms.txt', '/ai/knowledge.json', '/openapi.json', '/feeds/books.atom'], true)
+if (in_array($path, ['/robots.txt', '/llms.txt', '/ai/knowledge.json', '/ai/source-registry.jsonld', '/ai/discovery-attestation.json', '/openapi.json', '/feeds/books.atom'], true)
     || preg_match('#^/sitemap(?:-[A-Za-z0-9-]+)?\.xml$#', $path)) {
     $publicFile=__DIR__.$path;
     if (is_file($publicFile)) {
         $mime= str_ends_with($path, '.xml') ? 'application/xml' :
+            (str_ends_with($path, '.jsonld') ? 'application/ld+json' :
             (str_ends_with($path, '.json') ? 'application/json' :
-            (str_ends_with($path, '.atom') ? 'application/atom+xml' : 'text/plain'));
+            (str_ends_with($path, '.atom') ? 'application/atom+xml' : 'text/plain')));
         serve_discovery_file($publicFile,$mime);
     }
 }
@@ -458,6 +460,8 @@ function ag_ui_router(string $method,string $path): never {
    $emit(['type'=>'RUN_FINISHED','threadId'=>$threadId,'runId'=>$runId]);exit;
 }
 
+if($path==='/topics/')topic_view(null);
+if(preg_match('#^/topics/([a-z0-9-]+)/$#',$path,$m))topic_view($m[1]);
 if($path==='/')home();
 if($path==='/about/')about();
 if($path==='/for-agents/')agent_guide();

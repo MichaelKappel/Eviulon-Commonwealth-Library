@@ -145,7 +145,7 @@ def run(base):
     check(status==400 and d['error']['code']==-32602,'no implicit research from array coercion')
     check(all(x[0] for x in CHECKS),'all MCP contract checks pass')
     count=len(CHECKS)
-    print('EVIULON MCP site v3.14.4:', ('PASS' if all(v for v,_ in CHECKS) else 'FAIL'), f'{sum(v for v,_ in CHECKS)}/{count} checks')
+    print('EVIULON MCP:', ('PASS' if all(v for v,_ in CHECKS) else 'FAIL'), f'{sum(v for v,_ in CHECKS)}/{count} checks')
     return 0 if all(v for v,_ in CHECKS) else 1
 
 if __name__=='__main__':

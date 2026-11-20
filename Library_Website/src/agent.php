@@ -60,7 +60,7 @@ function agent_search_response(array $result): array {
 function agent_catalog(): array {
     return [
       'site'=>SERIES_NAME,'canonical_home'=>BASE_URL.'/',
-      'api_version'=>'1.3','site_version'=>'3.14.4',
+      'api_version'=>'1.3','site_version'=>'3.14.12',
       'official_source'=>'14 individually citeable Eviulon books; 1,925 print pages',
       'supplemental_source'=>'210 public-source Eviulon and Evulgare research reports, not official doctrine',
       'search_default_scope'=>['books'], 'research_opt_in'=>'Use scope=books,research (or scope=research only).',

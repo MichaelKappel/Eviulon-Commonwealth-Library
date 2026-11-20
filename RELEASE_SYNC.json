@@ -6,22 +6,28 @@
     "source_verified_heading_anchors": 219,
     "supplemental_sections": 1553
   },
+  "dropbox_policy": {
+    "automatic_for_completed_releases_in_current_chat": true,
+    "folder": "/Eviulon Library Releases/v2026.11.20.3.14.12-DISCOVERY-ATTESTATION/",
+    "public_sharing": false,
+    "upload_three_archives_and_checksums": true
+  },
   "files_and_trees": {
     "github_public": {
-      "files": 404,
-      "tree_sha256": "e6159eb5d6b39fa62348b05d8090e43e363356a8ae045b0dfe9b7adc120e3fc2"
+      "files": 3906,
+      "tree_sha256": "4cb6f6ae08abefbcc4fb7a1e1e2b7eae43ff299d6c4d5d391a108192841f6670"
     },
     "original_github": {
       "files": 81,
       "tree_sha256": "f92cfcee932acac96bb543fa5bb4d9df8c72bc4e521ab1d8929c8c7e51b90b38"
     },
     "private_source": {
-      "files": 1524,
-      "tree_sha256": "fe01b42e290e17accde7e115d76a803d08850bc056b2b9c7a2ee0c039fa35574"
+      "files": 1523,
+      "tree_sha256": "07eebc37de1b7f2708d15c1253b994028d7391b7aaa8005d21d9da5af7bdbb37"
     },
     "site_root": {
-      "files": 5467,
-      "tree_sha256": "837413a3d790f296763a9d1689b5f4b4029dbe255d865d60546452e95229fdc2"
+      "files": 12695,
+      "tree_sha256": "3420078dfd080c34ebc4e6defd120ecd1ed9e62ea49f563a579607bf62a18a66"
     }
   },
   "memory": {
@@ -43,7 +49,7 @@
     "research_supplemental_status": true,
     "source_heading_ids_stable": true
   },
-  "package_revision": "3.14.4",
+  "package_revision": "3.14.12",
   "policy": {
     "external_seeding_requires_explicit_approval": true,
     "full_text_public_runtime_only_not_github": true,
@@ -53,10 +59,10 @@
     "private_original_pdf_or_memory_in_public": false,
     "root_deploy_is_public_github_safe": false
   },
-  "public_mirror_file_count": 380,
-  "public_mirror_sha256": "4dfc4c589275f8716e2afabc5bf58a25ff5cc4008b39d8cdb189dbcf74d64948",
-  "release_id": "v2026.11.19.3.14.4-STATIC-DELIVERY",
-  "release_kind": "verified_static_origin_delivery_and_regression_protection",
+  "public_mirror_file_count": 3882,
+  "public_mirror_sha256": "14d2ad3900e2fcf387e3b32adf33310e470a9377bf57f3f65ae547147449ddfe",
+  "release_id": "v2026.11.20.3.14.12-DISCOVERY-ATTESTATION",
+  "release_kind": "source_grounded_discovery_package_attestation",
   "research_reference_files": {
     "count": 8,
     "manifest": "PRIVATE_SOURCE/docs/ai-learning-and-seeding/SOURCE_HASHES.json",
@@ -64,23 +70,60 @@
     "private_docs": "PRIVATE_SOURCE/docs/ai-learning-and-seeding/INDEX.md",
     "private_master_only": true
   },
-  "site_version": "3.14.4",
+  "site_version": "3.14.12",
   "source_provenance": {
     "books_found_in_private": 14,
     "reports_found_in_private": 46,
     "reports_not_found_in_private": 164
   },
   "static_delivery": {
-    "apache_local_assertions_passed": 3260,
+    "all_static_json_metadata_routes_require_empty_query": true,
+    "apache_jsonld_assertions_passed": 11,
+    "apache_local_assertions_passed": 4311,
     "assets": 17,
     "cache_max_age_seconds": 3600,
+    "canonical_entity_identities_aligned": 3702,
+    "discovery_attestation": "https://library.eviulon.com/ai/discovery-attestation.json",
+    "discovery_attestation_adversarial_mutations": 6,
+    "discovery_attestation_apache_http_checks": 11,
+    "discovery_attestation_navigation": 6,
+    "discovery_attestation_sitemap_urls": 3729,
+    "discovery_attestation_source_urls": 3702,
+    "discovery_attestation_topics": 21,
+    "html_build_checkpoint_atomic": true,
+    "html_cache_reuse_requires_global_source_digest": true,
+    "html_cache_reuse_requires_per_page_sha256": true,
+    "html_links_to_registry": true,
     "live_litespeed_verified": false,
     "manifest_url": "https://library.eviulon.com/ai/static-delivery.json",
-    "other_discovery": 5,
-    "prebuilt_metadata_json_snapshots": 241,
-    "sitemaps": 17,
+    "mtime_trust_removed": true,
+    "official_book_html_pages_and_landings": 1939,
+    "official_citation_snapshots": 1925,
+    "other_discovery": 8,
+    "post_deploy_probe_script": "tools/audit_live_discovery.py",
+    "prebuilt_canonical_html_pages": 3702,
+    "prebuilt_metadata_json_snapshots": 3719,
+    "print_page_id_fragment": "#print-page",
+    "query_safe_legacy_api_routes": true,
+    "registry_claims_training_use": false,
+    "registry_contains_manuscript_text": false,
+    "research_report_id_fragment": "#research",
+    "research_section_id_fragment": "#section",
+    "sitemaps": 18,
+    "source_grounded_topic_html": 21,
+    "source_grounded_topics": 20,
     "source_records_unchanged": 5105,
-    "total_static_resources": 280
+    "source_registry_entities": 224,
+    "source_registry_individual_part_links": 3478,
+    "source_registry_jsonld": "https://library.eviulon.com/ai/source-registry.jsonld",
+    "static_citation_metadata_snapshots": 3478,
+    "strict_apache_canonical_html_assertions_passed": 711,
+    "strict_apache_lexical_topic_assertions_passed": 702,
+    "summed_official_book_topic_source_unit_matches": 3074,
+    "summed_supplemental_research_topic_source_unit_matches": 4894,
+    "supplemental_research_citation_snapshots": 1553,
+    "supplemental_research_html_pages_and_landings": 1763,
+    "total_static_resources": 7485
   },
   "unrecovered_versions": [
     "3.15",
@@ -89,19 +132,36 @@
     "3.18"
   ],
   "verification": {
-    "canonical_urls_audited": 3708,
+    "apache_jsonld_http_assertions": 11,
+    "apache_topic_http_assertions": 702,
+    "canonical_entity_identities_aligned": 3702,
+    "canonical_html_snapshots": 3702,
+    "canonical_urls_audited": 3729,
+    "discovery_attestation_http_tests": 11,
+    "discovery_attestation_mutation_tests": 6,
+    "discovery_attestation_sitemap_url_coverage": 3729,
     "external_model_training_confirmed": false,
     "full_local_qa_stages_passed": 15,
+    "hash_safe_build_adversarial_tests_passed": true,
+    "html_registry_alternate_link_passed": true,
+    "lexical_topic_canonical_html": 21,
+    "lexical_topics": 20,
     "live_deployed": false,
     "memory_encoded_verified": 260,
     "memory_file_count": 260,
-    "metadata_http_assertions_passed": 97937,
+    "metadata_http_assertions_passed": 98315,
+    "query_bearing_api_dynamic_fallback_tests_passed": true,
     "research_originals_preserved": 8,
     "research_report_original_source_gap": 164,
     "runic_memory_unchanged_from_v3_14_3": true,
+    "source_phrase_positions_verified": true,
     "source_records_unchanged": 5105,
-    "static_json_snapshots": 241,
-    "static_public_resources_verified": 280,
-    "strict_apache_static_http_assertions": 3260
+    "source_registry_entities": 224,
+    "source_registry_full_text_exported": false,
+    "source_registry_linked_units": 3478,
+    "static_json_snapshots": 3719,
+    "static_public_resources_verified": 7485,
+    "strict_apache_html_http_assertions": 711,
+    "strict_apache_static_http_assertions": 4311
   }
 }

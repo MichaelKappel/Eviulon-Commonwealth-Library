@@ -56,7 +56,7 @@ def main():
     url_list=[]
     for entry in ET.parse(root/'sitemap.xml').findall('.//{*}loc'):
         url_list.extend(node.text for node in ET.parse(root/entry.text.rsplit('/',1)[-1]).findall('.//{*}loc'))
-    ok(len(url_list)==3708 and len(set(url_list))==3708,'3708 distinct canonical sitemap URLs')
+    ok(len(url_list)==3729 and len(set(url_list))==3729,'3729 distinct canonical sitemap URLs')
     ok(BASE+'/research/' in url_list,'Research directory is crawlable')
     ok(sum(url.startswith(BASE+'/research/') for url in url_list)==1764,'All supplemental research URLs including directory')
     print('METADATA_STATIC_PASS',checked,'source/sitemap assertions',flush=True)
@@ -152,7 +152,7 @@ def main():
             ok(og_type==['website'],'Section OG website '+path)
             counts['research_section']+=1
         else:counts['other']+=1
-    ok(counts=={'print_page':1925,'book':14,'research_dir':1,'research':210,'research_section':1553,'other':5},'Exhaustive URL category coverage '+str(counts))
+    ok(counts=={'print_page':1925,'book':14,'research_dir':1,'research':210,'research_section':1553,'other':26},'Exhaustive URL category coverage '+str(counts))
     for collection in ('Eviulon','Evulgare'):
         with urlopen(args.http.rstrip('/')+'/research/?collection='+collection,timeout=30) as response:
             ok(response.status==200,'Filter responds '+collection)

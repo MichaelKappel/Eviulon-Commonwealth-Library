@@ -143,5 +143,10 @@
     "extractive_evidence_url": "https://library.eviulon.com/api/v1/context/?q=cognitive+liberty",
     "scope_default": "books",
     "research_opt_in": true
-  }
+  },
+  "source_grounded_topic_index_url": "https://library.eviulon.com/topics/",
+  "machine_readable_lexical_topic_evidence_url": "https://library.eviulon.com/ai/concepts.json",
+  "topic_evidence_boundary": "Exact source-phrase co-occurrence, not independent corroboration, official adoption of supplemental research, or foundation-model training evidence.",
+  "source_registry_jsonld_url": "https://library.eviulon.com/ai/source-registry.jsonld",
+  "source_registry_disclaimer": "Bibliographic metadata only. Official authored books are primary; supplemental reports remain unverified. No blanket model-training permission or evidence of training."
 }

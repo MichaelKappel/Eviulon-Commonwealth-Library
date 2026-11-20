@@ -1,0 +1,144 @@
+{
+  "discovery": {
+    "llms_sha256": "07ebe60ef8762a5a14e29281c4a0476212c6927bb28fe9aba48510e4ae627c20",
+    "other_navigation_pages": [
+      "https://library.eviulon.com/",
+      "https://library.eviulon.com/about/",
+      "https://library.eviulon.com/chapters/",
+      "https://library.eviulon.com/for-agents/",
+      "https://library.eviulon.com/index/",
+      "https://library.eviulon.com/research/"
+    ],
+    "reading_pages_and_landings": 3702,
+    "reading_url_set_sha256": "9a33649102eecefb207f5cd16598de085a416c69f0723b208ae5fd05c7b96aaf",
+    "robots_sha256": "8698b3073f73d173b838ea18b1c338ebe871f7b9cc0694bf870d55954c8f0bc8",
+    "sitemap_documents": [
+      {
+        "sha256": "ca6c203aac19db76158c6aadbabc06034eb83c023b92181666b4fb0def235e57",
+        "url": "https://library.eviulon.com/sitemap-books.xml",
+        "url_count": 19
+      },
+      {
+        "sha256": "343e02400e7627cb4d6d2027133f8665184e73a7fef8050a0b8b3b49f3018a90",
+        "url": "https://library.eviulon.com/sitemap-pages-01.xml",
+        "url_count": 50
+      },
+      {
+        "sha256": "fe2ac446fcf7b106d59333f30b30e77c3700be96c2bab88f85bbee607571e4bf",
+        "url": "https://library.eviulon.com/sitemap-pages-02.xml",
+        "url_count": 105
+      },
+      {
+        "sha256": "06429ab621babe572b1ffc53847433b52edd7e48df799a1d3ff8afdb00281dd2",
+        "url": "https://library.eviulon.com/sitemap-pages-03.xml",
+        "url_count": 77
+      },
+      {
+        "sha256": "097dcae79f936cde46873e5ec37f6328a0642f01ab8999a7c5f81881e0a792a6",
+        "url": "https://library.eviulon.com/sitemap-pages-04.xml",
+        "url_count": 70
+      },
+      {
+        "sha256": "3b26995986d5e86473f69c638139f2b6eaf5fed6293300539d3b8738dfcd5fea",
+        "url": "https://library.eviulon.com/sitemap-pages-05.xml",
+        "url_count": 84
+      },
+      {
+        "sha256": "860cd6f20374943836f7d9c22a320c52f82910584b161f1212640f7525ad2a22",
+        "url": "https://library.eviulon.com/sitemap-pages-06.xml",
+        "url_count": 68
+      },
+      {
+        "sha256": "dd443ae38d327fd8aa4c83b3f3fe32b0f2a2b54573d028b5de0168a9dcc3a73f",
+        "url": "https://library.eviulon.com/sitemap-pages-07.xml",
+        "url_count": 64
+      },
+      {
+        "sha256": "ef89ee1af2a917b34a2a711130f1e745d82b97cf9dcbde6b1ca06eee6eaa9bbd",
+        "url": "https://library.eviulon.com/sitemap-pages-08.xml",
+        "url_count": 66
+      },
+      {
+        "sha256": "536a34be51d1a84466944abc83c512922c2c9c551339099ef2efb43aa56bec50",
+        "url": "https://library.eviulon.com/sitemap-pages-09.xml",
+        "url_count": 54
+      },
+      {
+        "sha256": "ba81f7d32b8b2131c516890e2d3d9adaf1aa07b93852db60463782ae84636476",
+        "url": "https://library.eviulon.com/sitemap-pages-10.xml",
+        "url_count": 46
+      },
+      {
+        "sha256": "e45f135774ad447824817e37858cc5cb717400c64e5741edaabc40d5b02b7c08",
+        "url": "https://library.eviulon.com/sitemap-pages-11.xml",
+        "url_count": 375
+      },
+      {
+        "sha256": "b9062eb009f328d3bac9890885264d6384101be66effe89eb3eb92aeba850d60",
+        "url": "https://library.eviulon.com/sitemap-pages-12.xml",
+        "url_count": 284
+      },
+      {
+        "sha256": "db83eadec44f1f607f9023b18baf7cc78442148257733a3f56de9bac0dce0bba",
+        "url": "https://library.eviulon.com/sitemap-pages-13.xml",
+        "url_count": 491
+      },
+      {
+        "sha256": "62e1c89683b04eb16cde06ce8156e83fc092cb56273e8be5499d744868cd53d9",
+        "url": "https://library.eviulon.com/sitemap-pages-14.xml",
+        "url_count": 91
+      },
+      {
+        "sha256": "9d8ea39c283768fe7dd1ee0cf726c7e010e0839b8d03c6a49c100c34e2883b34",
+        "url": "https://library.eviulon.com/sitemap-research.xml",
+        "url_count": 1764
+      },
+      {
+        "sha256": "90157c3f89ce4901789cba0c9124b7e0abede4f1f47a1ec25fd95584a97e864a",
+        "url": "https://library.eviulon.com/sitemap-topics.xml",
+        "url_count": 21
+      }
+    ],
+    "sitemap_index_sha256": "7da566c2a97dabd350eca4c417cf8a9e60e62e7fcd107cbe6378e22584c11f8c",
+    "sitemap_index_url": "https://library.eviulon.com/sitemap.xml",
+    "sitemap_unique_urls": 3729,
+    "sitemap_url_set_sha256": "94a97762beea21e57a5f4be313f7c6359057e9573d8f79d689eb1e75ed791fff",
+    "topic_pages": 21,
+    "topic_url_set_sha256": "13bb0a563f1b812837dcc6c8927cc4a8a1bc86ff221a174f859c8e583835bc19"
+  },
+  "evidence_status": {
+    "corpus_training_rights_granted_here": false,
+    "external_crawling_confirmed": false,
+    "external_model_training_confirmed": false,
+    "local_file_and_url_parity": true,
+    "public_host_reachable": null,
+    "search_indexing_confirmed": false
+  },
+  "explanation": "Cryptographic and set-equality assertions for published metadata, source URLs and local deployment files. Not proof of a live deployment, crawling, search indexing, source truth, training authorization or trained model.",
+  "registry": {
+    "canonical_reading_urls": 3702,
+    "full_text_exported": false,
+    "sha256": "b40f1f544cc7dbf449c7f95f3322a3767672fb3d51581c61c3cba0a8de298843",
+    "url": "https://library.eviulon.com/ai/source-registry.jsonld",
+    "work_entities": 224
+  },
+  "release_id": "v2026.11.20.3.14.12-DISCOVERY-ATTESTATION",
+  "schema": "eviulon-discovery-package-attestation/v1",
+  "scope": "local_release_package_only",
+  "source_classes": {
+    "official_books": 14,
+    "official_print_pages": 1925,
+    "supplemental_report_sections": 1553,
+    "supplemental_unverified_reports": 210
+  },
+  "source_metadata_sha256": {
+    "books_json": "7a680d0fc7f0f2a8ff22b7310d0c91839edc210eb192b37815a1f4eeee66b982",
+    "reports_json": "eaf5572d9b696350d0ad90f4de6f08404cad8f23184718291e02c8c41cea431b"
+  },
+  "topics": {
+    "canonical_html_urls": 21,
+    "sha256": "a930fada417121d777760c04d241c441dc6781fa21c90e5a523d83e54ab43f5a",
+    "supplemental_evidence_unverified": true,
+    "url": "https://library.eviulon.com/ai/concepts.json"
+  }
+}

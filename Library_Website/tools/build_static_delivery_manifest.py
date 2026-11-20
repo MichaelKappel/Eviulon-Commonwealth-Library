@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Deterministically inventory deploy-time static files and validate their checksums.
 
-This is a *public-files-only* inventory: no full page text, report sections,
-private Runic records, dataset exports or original PDF manuscripts.
+This is an inventory of canonical public static responses. Individual reading HTML
+contains the already-public text; no bulk text feed, private Runic records,
+original manuscript PDFs or source document archives are released.
 Usage: python3 tools/build_static_delivery_manifest.py --write|--check
 """
 from __future__ import annotations
@@ -22,11 +23,30 @@ def build():
         mapping['/api/v1/books/'+p.stem+'/toc/']=p.relative_to(ROOT).as_posix()
     for p in sorted((ROOT/'api-cache/v1/research').glob('*/*.json')):
         mapping['/api/v1/research/'+p.parent.name+'/'+p.stem+'/']=p.relative_to(ROOT).as_posix()
-    if len(mapping)!=241:raise ValueError(f'Expected 241 prebuilt JSON snapshots, got {len(mapping)}')
+    for p in sorted((ROOT/'api-cache/v1/citations/books').glob('*/*.json')):
+        mapping[f'/api/v1/books/{p.parent.name}/citations/{p.stem}/']=p.relative_to(ROOT).as_posix()
+    for p in sorted((ROOT/'api-cache/v1/citations/research').glob('*/*/*.json')):
+        mapping[f'/api/v1/research/{p.parent.parent.name}/{p.parent.name}/parts/{p.stem}/citation/']=p.relative_to(ROOT).as_posix()
+    if len(mapping)!=3719:raise ValueError(f'Expected 3719 prebuilt JSON snapshots, got {len(mapping)}')
     categories={p:'api_snapshot' for p in mapping}
-    extras=['robots.txt','llms.txt','openapi.json','ai/knowledge.json','feeds/books.atom']
+    html_manifest=json.loads((ROOT/'html-cache/manifest.json').read_text())
+    if html_manifest['total']!=3702 or html_manifest['release_id']!=(ROOT/'RELEASE_ID.txt').read_text().strip():
+        raise ValueError('Stale canonical reading HTML manifest')
+    for r in html_manifest['snapshots']:
+        url=r['url']
+        if url in mapping:raise ValueError('Overlapping static source route: '+url)
+        mapping[url]=r['relative_path'];categories[url]='canonical_html'
+
+    # Include all 21 canonical lexical topic HTML endpoints, generated from source-backed evidence.
+    topics=json.loads((ROOT/'topics-cache/manifest.json').read_text())
+    if topics['pages']!=21 or topics['release_id']!=(ROOT/'RELEASE_ID.txt').read_text().strip():
+        raise ValueError('Stale topic HTML manifest')
+    for row in topics['snapshot_rows']:
+        if row['url'] in mapping:raise ValueError('Duplicate topic URL '+row['url'])
+        mapping[row['url']]=row['path'];categories[row['url']]='topic_html'
+    extras=['robots.txt','llms.txt','openapi.json','ai/knowledge.json','feeds/books.atom','ai/concepts.json','ai/source-registry.jsonld','ai/discovery-attestation.json']
     sitemap_files=sorted(ROOT.glob('sitemap*.xml'))
-    if len(sitemap_files)!=17:raise ValueError(f'Expected 17 sitemap files, got {len(sitemap_files)}')
+    if len(sitemap_files)!=18:raise ValueError(f'Expected 18 sitemap files, got {len(sitemap_files)}')
     extras.extend(p.name for p in sitemap_files)
     for p in extras:
         if '/'+p in mapping:raise ValueError('Duplicate route '+p)
@@ -42,15 +62,17 @@ def build():
         if not p.is_file() or not p.resolve().is_relative_to(ROOT.resolve()):raise ValueError('Missing/unsafe static source '+relative)
         data=p.read_bytes()
         records.append({'route':route,'kind':categories[route],'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-    counts={k:sum(r['kind']==k for r in records) for k in ('api_snapshot','discovery','asset')}
-    if counts!={'api_snapshot':241,'discovery':22,'asset':17}:raise ValueError(str(counts))
+    counts={k:sum(r['kind']==k for r in records) for k in ('api_snapshot','canonical_html','topic_html','discovery','asset')}
+    if counts!={'api_snapshot':3719,'canonical_html':3702,'topic_html':21,'discovery':26,'asset':17}:raise ValueError(str(counts))
     return {
       'kind':'eviulon_static_delivery_inventory',
       'release_id':(ROOT/'RELEASE_ID.txt').read_text(encoding='utf-8').strip(),
       'description':'Public files intended for direct Apache/LiteSpeed delivery without PHP. SHA-256 fingerprints are for this exact release, not external indexing or model training proof.',
-      'routing':'GET/HEAD API metadata snapshot rewrites, direct static discovery and assets. Dynamic HTML, search, print page and research section text APIs, MCP and AG-UI are intentionally excluded.',
+      'routing':'GET/HEAD query-free canonical book/report and source-grounded topic HTML is pre-rendered without PHP; metadata JSON, bounded lexical evidence, sitemaps and assets are static. Search, source-text APIs, MCP, AG-UI, alternate URL forms and query-bearing requests remain dynamic.',
       'cache_policy':'public, max-age=3600, stale-while-revalidate=86400',
       'source_text_exported':False,
+      'individual_canonical_reading_html_contains_original_public_text':True,
+      'bulk_manuscript_or_dataset_exported':False,
       'counts':counts,'total':len(records),'files':records,
     }
 

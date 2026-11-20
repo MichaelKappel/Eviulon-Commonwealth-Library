@@ -1,3 +1,54 @@
+## v3.14.12 — Discovery attestation (2026-11-20)
+
+Adds static, SHA-256-bound metadata and sitemap coverage attestation, six adversarial tests, and enhanced live-readiness audit without asserting crawling, indexing, training or licensing. Original text and Runic memory preserved.
+
+## v3.14.11 — Registry/HTML structured entity identity parity
+
+**All 3,702 canonical reading HTML pages** now carry registry-discoverability `<link rel="alternate" type="application/ld+json">`; 14 official Book entities, 210 supplemental Report entities and 3,478 individual print-page/section identities use the same schema.org `@id` in both the metadata-only registry and canonical page JSON-LD. Research stays explicitly unverified. The new corpus-wide validator verifies exact identity, parentage, entity type, and canonical links, preventing duplicate or orphaned identities.
+
+**15/15 full local QA stages passed**, including **98,315** metadata assertions over **3,729** canonical URLs; **4,299** Apache static-delivery checks, **711** canonical reading checks, **702** topic checks, **11** source registry checks, and **4** sampled identity-link HTTP checks, in addition to the 3,702-page offline graph comparison. The original **5,105** content records, **260** protected Runic memory files and eight private learning/seeding studies are unchanged. **Production DNS was not resolvable from this environment; production deployment, external indexing and model training are NOT verified.**
+
+See `docs/JSONLD_ENTITY_IDENTITY_ALIGNMENT.md` and `tools/test_jsonld_entity_alignment.py`.
+
+## v3.14.10 — machine-readable, metadata-only source registry
+
+Canonical public JSON-LD at `/ai/source-registry.jsonld` covers **14 official books, 210 supplemental unverified reports, and 3,478 original page/section URLs**. Exact source SHA-256 values from existing published metadata, working book editions, and stable individual citation-route templates. Never confuses fictional authored canon, unverified research and externally corroborated facts. No manuscript text, private `.uai` sources, training license, DOI or peer-review claims.
+
+Full local regression **15/15**; **98,315** metadata assertions across **3,729** canonical HTML URLs, **4,299** Apache static HTTP checks, **711** canonical reading, **702** lexical topic and **11** registry checks. All **5,105** original content records unchanged; protected **260** Runic memory records intact. Live production not deployed. Read `docs/SOURCE_REGISTRY_JSONLD.md`.
+
+## v3.14.9 — source-grounded lexical topic navigation
+
+20 exact phrase topics; 21 canonical static topic pages, bounded source-verified evidence, sitemap and machine-readable `/ai/concepts.json`. Book-primary and explicitly unverified supplemental research. Query-bearing requests use PHP. See docs/SOURCE_GROUNDED_LEXICAL_TOPICS.md. Final local QA PASS: 15/15 stages; 98,315 semantic assertions; 4,287 Apache static checks; 711 Apache canonical HTML checks; 702 Apache topic checks. Still NOT live deployed.
+
+## v3.14.8 — query-safe static metadata API
+
+All prebuilt metadata API rewrites now require an empty query string; query-bearing requests reach the PHP handler. Direct canonical GET/HEAD remains static; 3,702 HTML and 3,719 JSON snapshots retained. See docs/STATIC_API_QUERY_GUARDS.md. Local 15/15 QA PASS; strict Apache 4,103 static JSON + 711 HTML checks PASS; 97,937 metadata checks PASS. Dropbox preservation is tracked independently. NOT live-deployed.
+
+## v3.14.7 — hash-verified resumable HTML snapshot builder (local release)
+
+Static canonical HTML build never trusts modification times. Every reused page must match an exact dependency digest plus its own recorded SHA-256 and route. Interrupted builds resume using atomic validated checkpoints; full tests now include adversarial stale-cache scenarios. See `docs/STATIC_SNAPSHOT_INTEGRITY.md`. The 3,702 canonical reading HTML pages and 3,719 static JSON snapshots remain unchanged in scope; live deployment/performance still unverified.
+
+## v3.14.6 — static canonical reading HTML (staging; verify production separately)
+
+Source-generated HTML snapshots for official print pages and supplemental research sections; no-query canonical GET/HEAD only; all source text records untouched, research unverified; re-render and verify via `tools/build_static_html.py`. HTML snapshots stay OUT of public GitHub.
+
+# v3.14.5 — Static citation delivery (staged, not deployed)
+
+**Release ID:** `v2026.11.19.3.14.5-STATIC-CITATIONS`. Rebuilt from recovered v3.14.4, **not** recovered historical v3.18.
+
+- Preserves all **241** existing static catalog metadata JSON routes, and adds **3,478** prebuilt fixed citation-metadata JSON responses: **1,925 official-book page citations**, **1,553 independently labeled supplemental research-section citations**. Total **3,719** static JSON snapshots, approx **3,869,820** payload bytes.
+- Uses the **exact pre-existing PHP citation objects** (same fields and values) with no original page/section body text, book exports or report exports. The generated JSON is deterministic and source-derived.
+- On Apache/LiteSpeed, `GET` and `HEAD` to canonical citation URLs **without query strings** now use public static files with web-server ETag, Last-Modified, cache, and `304`, bypassing PHP. The PHP development router emulates this for QA. Unsupported methods, invalid references and query-string variants retain their dynamic routes, errors and behavior. Full-text APIs, search, report reading, MCP and AG-UI remain dynamic.
+- `/ai/static-delivery.json` now inventories **3,758** static public resources (3,719 metadata snapshots, 22 discovery files, 17 assets) with exact SHA-256s. **No original corpus text was modified:** 5,105/5,105 original files remain unchanged.
+- Validation: `php tools/build_api_snapshots.php --check`, `python3 tools/build_static_delivery_manifest.py --check`, `python3 tools/test_static_delivery.py --http ... --all --strict-web-server`, and the full `bash tools/run_local_qa.sh` regression (15/15). Local Apache: **4,079/4,079 HTTP assertions**; complete PHP QA suite **15/15** including **97,937** metadata assertions over **3,708** canonical HTML pages.
+- Static JSON is not a new rights grant, endorsement, scholarly validation or proof of AI training or ingestion. Supplemental research remains unverified and always labeled. **No production LiteSpeed deployment was performed.**
+
+Deployment: extract only the **ROOT_DEPLOY** archive's contents at the existing website document root, including hidden `.htaccess` and `api-cache/.htaccess`. Keep private `.uai` memory, PDF manuscripts, and original report sources **outside** the web root. Maintain previous live monitoring logs and credentials separately; verify `X-Eviulon-Delivery`, `ETag`, `304`, and `Content-Type` from representative live citation URLs and confirm invalid citations remain 404. Restore the prior working deployment if host routing/security fails.
+
+All releases must have **three matching, byte-verified archives** (PRIVATE_MASTER, ROOT_DEPLOY, PUBLIC_GITHUB), matching release manifests and SHA-256 checksums, plus a verified permanent backup in the owner's **private Dropbox** release folder before being called delivered. The GitHub archive contains only approved public source and metadata, never private memory or full body-text JSON. See `docs/STATIC_CITATION_DELIVERY.md`.
+
+---
+
 # v3.14.4-STATIC-DELIVERY — static file continuity and web-server performance contract
 
 - Retains and revalidates all 241 prebuilt API JSON catalog/toc/report metadata snapshots introduced in v3.13.

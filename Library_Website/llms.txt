@@ -3,6 +3,8 @@
 
 ## Index and retrieval
 - [Library](https://library.eviulon.com/) — all fourteen volumes
+- [Source-grounded lexical topics](https://library.eviulon.com/topics/) — 20 exact phrase topics across official books (primary) and explicitly unverified supplemental research (secondary); not independent verification or model learning.
+- [Machine-readable bounded topic evidence](https://library.eviulon.com/ai/concepts.json) — stable source URLs, record SHA-256, first-match offsets and bounded examples, not bulk manuscript text.
 - [Chapter and section landmarks](https://library.eviulon.com/chapters/) — headings tied to canonical print-page anchors, no duplicated text
 - [Page index](https://library.eviulon.com/index/) — links to all 1,925 individual print pages
 - [Book catalog JSON](https://library.eviulon.com/api/v1/books/) — metadata, descriptions, counts and source URLs
@@ -40,6 +42,9 @@ Every `/{book-slug}/{n}/` address contains readable server-rendered HTML extract
 - Book chapter landmarks: `/api/v1/books/{slug}/toc/`. Canonical print-page citation: `/api/v1/books/{slug}/citations/{n}/`.
 - Optional broad keyword discovery: `?q=identity+continuity&match=any`. Default `match=all` requires all significant terms. Search is lexical, not vector/semantic.
 - The public API is source retrieval, not a generative chatbot or a guarantee of compatibility with any third-party agent host.
+
+- [Local discovery release attestation](https://library.eviulon.com/ai/discovery-attestation.json) — cryptographic release and sitemap/registry parity, **not** evidence of deployment, indexing, rights approval or AI model training.
+- [Source registry JSON-LD](https://library.eviulon.com/ai/source-registry.jsonld) — 14 official books and 210 unverified research reports, metadata and canonical citation links only; not a bulk text dataset or training authorization.
 
 ## Machine reader notes
 - HTML contains readable book text and ordinary hyperlinks with no JavaScript required.

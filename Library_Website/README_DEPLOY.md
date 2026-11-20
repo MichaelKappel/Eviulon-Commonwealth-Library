@@ -1,3 +1,36 @@
+## v3.14.9 — source-grounded lexical topic navigation
+
+20 exact phrase topics; 21 canonical static topic pages, bounded source-verified evidence, sitemap and machine-readable `/ai/concepts.json`. Book-primary and explicitly unverified supplemental research. Query-bearing requests use PHP. See docs/SOURCE_GROUNDED_LEXICAL_TOPICS.md. Final local QA PASS: 15/15 stages; 98,315 semantic assertions; 4,287 Apache static checks; 711 Apache canonical HTML checks; 702 Apache topic checks. Still NOT live deployed.
+
+## v3.14.8 — query-safe static metadata API
+
+All prebuilt metadata API rewrites now require an empty query string; query-bearing requests reach the PHP handler. Direct canonical GET/HEAD remains static; 3,702 HTML and 3,719 JSON snapshots retained. See docs/STATIC_API_QUERY_GUARDS.md. Local 15/15 QA PASS; strict Apache 4,103 static JSON + 711 HTML checks PASS; 97,937 metadata checks PASS. Dropbox preservation is tracked independently. NOT live-deployed.
+
+## v3.14.7 — hash-verified resumable HTML snapshot builder (local release)
+
+Static canonical HTML build never trusts modification times. Every reused page must match an exact dependency digest plus its own recorded SHA-256 and route. Interrupted builds resume using atomic validated checkpoints; full tests now include adversarial stale-cache scenarios. See `docs/STATIC_SNAPSHOT_INTEGRITY.md`. The 3,702 canonical reading HTML pages and 3,719 static JSON snapshots remain unchanged in scope; live deployment/performance still unverified.
+
+## v3.14.6 — static canonical reading HTML (staging; verify production separately)
+
+Source-generated HTML snapshots for official print pages and supplemental research sections; no-query canonical GET/HEAD only; all source text records untouched, research unverified; re-render and verify via `tools/build_static_html.py`. HTML snapshots stay OUT of public GitHub.
+
+# v3.14.5 — Static citation delivery (staged, not deployed)
+
+**Release ID:** `v2026.11.19.3.14.5-STATIC-CITATIONS`. Rebuilt from recovered v3.14.4, **not** recovered historical v3.18.
+
+- Preserves all **241** existing static catalog metadata JSON routes, and adds **3,478** prebuilt fixed citation-metadata JSON responses: **1,925 official-book page citations**, **1,553 independently labeled supplemental research-section citations**. Total **3,719** static JSON snapshots, approx **3,869,820** payload bytes.
+- Uses the **exact pre-existing PHP citation objects** (same fields and values) with no original page/section body text, book exports or report exports. The generated JSON is deterministic and source-derived.
+- On Apache/LiteSpeed, `GET` and `HEAD` to canonical citation URLs **without query strings** now use public static files with web-server ETag, Last-Modified, cache, and `304`, bypassing PHP. The PHP development router emulates this for QA. Unsupported methods, invalid references and query-string variants retain their dynamic routes, errors and behavior. Full-text APIs, search, report reading, MCP and AG-UI remain dynamic.
+- `/ai/static-delivery.json` now inventories **3,758** static public resources (3,719 metadata snapshots, 22 discovery files, 17 assets) with exact SHA-256s. **No original corpus text was modified:** 5,105/5,105 original files remain unchanged.
+- Validation: `php tools/build_api_snapshots.php --check`, `python3 tools/build_static_delivery_manifest.py --check`, `python3 tools/test_static_delivery.py --http ... --all --strict-web-server`, and the full `bash tools/run_local_qa.sh` regression (15/15). Local Apache: **4,079/4,079 HTTP assertions**; complete PHP QA suite **15/15** including **97,937** metadata assertions over **3,708** canonical HTML pages.
+- Static JSON is not a new rights grant, endorsement, scholarly validation or proof of AI training or ingestion. Supplemental research remains unverified and always labeled. **No production LiteSpeed deployment was performed.**
+
+Deployment: extract only the **ROOT_DEPLOY** archive's contents at the existing website document root, including hidden `.htaccess` and `api-cache/.htaccess`. Keep private `.uai` memory, PDF manuscripts, and original report sources **outside** the web root. Maintain previous live monitoring logs and credentials separately; verify `X-Eviulon-Delivery`, `ETag`, `304`, and `Content-Type` from representative live citation URLs and confirm invalid citations remain 404. Restore the prior working deployment if host routing/security fails.
+
+All releases must have **three matching, byte-verified archives** (PRIVATE_MASTER, ROOT_DEPLOY, PUBLIC_GITHUB), matching release manifests and SHA-256 checksums, plus a verified permanent backup in the owner's **private Dropbox** release folder before being called delivered. The GitHub archive contains only approved public source and metadata, never private memory or full body-text JSON. See `docs/STATIC_CITATION_DELIVERY.md`.
+
+---
+
 # v3.14.4-STATIC-DELIVERY — static file continuity and web-server performance contract
 
 - Retains and revalidates all 241 prebuilt API JSON catalog/toc/report metadata snapshots introduced in v3.13.
@@ -204,8 +237,8 @@ The live website was inaccessible to this assistant's web checker before packagi
 
 # Eviulon Commonwealth Library v3.8 — Production Deployment and Rollback
 
-**Release:** 2026-11-18 · **Target:** `https://library.eviulon.com/` (existing PHP/Apache hosting)
-**Status:** passed isolated local checks; **NOT uploaded or independently verified on the live host.**
+**Release:** 2026-11-18 · **Target:** `https://library.eviulon.com/` (existing PHP/Apache hosting)  
+**Status:** passed isolated local checks; **NOT uploaded or independently verified on the live host.**  
 **Additional paid services:** none. No hosted AI, GPU, MCP subscription, GitHub Actions or paid indexing tool required.
 
 ## Authority contract (non-negotiable)
@@ -254,3 +287,18 @@ Manually inspect: homepage priority of fourteen book cards; portrait and landsca
 The earlier private v3.7 operator pack contains only unapproved pilot questions and blank review materials. Human approval of source-backed gold, real external-agent transcript capture, and two independent human evaluations are still required before any answer-quality score is reported. v3.8 confirms **source accessibility and literal-quote fidelity**, not understanding, search-engine indexing, model-training dataset participation, or recognition of a real Eviulon government.
 
 See `docs/EVIDENCE_BUNDLE_API.md`, `docs/AGENT_PILOT_OPERATIONS.md`, `docs/AGENT_ANSWER_EVALUATION.md`, `docs/PRODUCTION_READINESS.md`, and `QA_REPORT.md`.
+
+## v3.14.10 JSON-LD source registry (staging)
+
+- Static `/ai/source-registry.jsonld`: metadata for 14 primary authored books and 210 unverified supplemental reports; links for all 3,478 canonical page/section URLs, no manuscript text or private materials.
+- Use `tools/build_source_registry.py --check`, `tools/test_source_registry.py --http HOST`, and the complete `tools/run_local_qa.sh` gate.
+- This archive is root-deployable after separate host checks. No production deployment, AI training, or third-party indexing is implied.
+
+## v3.14.11: canonical source graph IDs and discovery readiness
+
+- `ai/source-registry.jsonld` is static, metadata-only, and has `Book#book`, `Report#research`, printed `CreativeWork#print-page`, and supplemental `CreativeWork#section` identities that agree with the complete canonical HTML JSON-LD corpus.
+- Every canonical reading page advertises the registry in HTML `<head>` via `<link rel="alternate" type="application/ld+json">`. This is not a bulk full-text feed or license declaration.
+- Run `python3 tools/test_jsonld_entity_alignment.py` and `tools/run_local_qa.sh`, then verify your deployed LiteSpeed server separately. The complete 3,702 page test is local; the live public host was not reachable for verification from the release environment.
+
+### v3.14.12 discovery attestation
+After deployment, check `/ai/discovery-attestation.json` and run `python3 tools/audit_live_discovery.py --base-url https://library.eviulon.com`. This is an HTTP deployment verification only, not an indexing or training claim.

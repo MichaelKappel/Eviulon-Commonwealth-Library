@@ -40,6 +40,7 @@ def links(html):
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--http',required=True);p.add_argument('--root',default=str(Path(__file__).resolve().parents[1])); a=p.parse_args()
+    version=json.loads((Path(a.root)/'VERSION.json').read_text())['site_version']
     records=json.loads((Path(a.root)/'data/research/reports.json').read_text())
     groups={group:[record for record in records if record['group']==group] for group in ('Eviulon','Evulgare')}
     assert len(records)==210 and len(groups['Eviulon'])==90 and len(groups['Evulgare'])==120
@@ -53,7 +54,7 @@ def main():
         page=get(a.http,path)
         parser=links(page)
         ok(any(nav=='Main navigation' and href=='/research/' for nav,href,_ in parser.nav_links),f'Research missing from persistent nav: {path}')
-        ok('href="/assets/style.css?v=3.14.4"' in page,f'Cache-busting stylesheet missing: {path}')
+        ok(f'href="/assets/style.css?v={version}"' in page,f'Cache-busting stylesheet missing for v{version}: {path}')
         ok('href="/"' in page,f'Books lost: {path}')
 
     home=get(a.http,'/')

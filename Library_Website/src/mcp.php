@@ -25,7 +25,7 @@ function mcp_ok(mixed $id,array $result): never {
     header('Content-Type: application/json; charset=utf-8');
     header('Cache-Control: no-store');
     header('X-Content-Type-Options: nosniff');
-    $result['_meta']=['io.modelcontextprotocol/serverInfo'=>['name'=>'eviulon-library','version'=>'3.14.4']];
+    $result['_meta']=['io.modelcontextprotocol/serverInfo'=>['name'=>'eviulon-library','version'=>'3.14.12']];
     echo j(['jsonrpc'=>'2.0','id'=>$id,'result'=>$result]);
     exit;
 }

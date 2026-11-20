@@ -1,0 +1,8 @@
+Options -Indexes
+AddType text/html .html
+AddCharset UTF-8 .html
+<IfModule mod_headers.c>
+  Header always set Cache-Control "public, max-age=3600, stale-while-revalidate=86400"
+  Header always set X-Eviulon-Delivery "prebuilt-source-topic-html"
+  Header always set X-Content-Type-Options "nosniff"
+</IfModule>

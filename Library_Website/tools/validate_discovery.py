@@ -60,20 +60,20 @@ def static_checks(root: pathlib.Path,a:Audit):
     a.check(feed.findtext(f'{ATOM}updated') is not None and all(e.findtext(f'{ATOM}updated') for e in entries),'Atom dates are structurally complete')
     sitemap_index=ET.parse(root/'sitemap.xml').getroot()
     sm=[e.text for e in sitemap_index.findall('.//{*}loc')]
-    a.check(len(sm)==16 and sm[0]==BASE+'/sitemap-books.xml' and sm[-1]==BASE+'/sitemap-research.xml','Sitemap index lists books before supplemental research')
+    a.check(len(sm)==17 and sm[0]==BASE+'/sitemap-books.xml' and sm[-2]==BASE+'/sitemap-research.xml' and sm[-1]==BASE+'/sitemap-topics.xml','Sitemap index lists books, supplemental research, then bounded lexical topics')
     all_sitemaps=[];all_urls=[]
     for loc in sm:
         name=loc.rsplit('/',1)[-1]
         if not (root/name).is_file():a.check(False,'Sitemap file exists: '+name);continue
         all_sitemaps.append(name)
         all_urls.extend(x.text for x in ET.parse(root/name).findall('.//{*}loc'))
-    a.check(len(all_urls)==3708 and len(set(all_urls))==3708,'3,708 distinct indexable canonical URLs including Research directory')
+    a.check(len(all_urls)==3729 and len(set(all_urls))==3729,'3,729 distinct canonical URLs including 21 source-grounded topic pages')
     a.check(all(x.startswith(BASE+'/') and not ('?' in x or '#' in x) for x in all_urls),'Sitemaps contain only same-origin canonical URLs')
     book_sitemap=[x.text for x in ET.parse(root/'sitemap-books.xml').findall('.//{*}loc')]
     a.check(BASE+'/search/' not in all_urls,'Noindex search interface excluded from sitemap')
     a.check(all(x in book_sitemap for x in expected),'Every official book has a sitemap landing URL')
     a.check(len([x for x in all_urls if x.startswith(BASE+'/research/')])==1764,'Research directory plus 210 reports and 1,553 sections discoverable')
-    a.check((root/'openapi.json').is_file() and (root/'llms.txt').is_file(),'OpenAPI and agent discovery retained')
+    a.check((root/'openapi.json').is_file() and (root/'llms.txt').is_file() and (root/'ai/source-registry.jsonld').is_file(),'OpenAPI and agent discovery retained')
     a.check('Disallow: /data/' in (root/'robots.txt').read_text(), 'Robots guidance retained; not used as access control')
     no_bulk=[x for x in root.rglob('*') if x.is_file() and (x.suffix.lower() in ('.zip','.pdf','.epub','.mobi','.uai') or 'monitor-logs' in x.parts)]
     a.check(not no_bulk,'No manuscript bulk downloads, private runes, or monitoring logs in release')

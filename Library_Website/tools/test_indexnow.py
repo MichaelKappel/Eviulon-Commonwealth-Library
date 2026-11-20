@@ -26,7 +26,7 @@ class IndexNowSafetyTests(unittest.TestCase):
         self.assertFalse(any('/research/' in x for x in urls))
     def test_research_requires_explicit_opt_in(self):
         with self.assertRaises(ValueError):module.urls_to_publish(ROOT,'all',False,None)
-        self.assertEqual(len(module.urls_to_publish(ROOT,'all',True,None)),3708)
+        self.assertEqual(len(module.urls_to_publish(ROOT,'all',True,None)),3729)
     def test_requires_key_before_network(self):
         with patch.object(module.urllib.request,'urlopen',side_effect=AssertionError('Unexpected network call')):
             with contextlib.redirect_stderr(io.StringIO()):

@@ -28,7 +28,10 @@ def canonical_set(root: pathlib.Path,include_research:bool)->tuple[list[str],set
     # The site index is authoritative: never send invented locations.
     all_urls=list(preferred)
     for f in sorted(root.glob('sitemap-pages-*.xml')):all_urls.extend(sitemap_locs(f))
-    if include_research:all_urls.extend(sitemap_locs(root/'sitemap-research.xml'))
+    if include_research:
+        all_urls.extend(sitemap_locs(root/'sitemap-research.xml'))
+        # Non-book supplemental discovery topics are opt-in, like research.
+        all_urls.extend(sitemap_locs(root/'sitemap-topics.xml'))
     canonical=set(all_urls)
     if len(canonical)!=len(all_urls):raise ValueError('Duplicate canonical sitemap URLs')
     for url in canonical:

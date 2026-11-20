@@ -1,3 +1,11 @@
+# Static delivery assurance: v3.14.5 addendum
+
+v3.14.5 adds 3,478 prebuilt original citation metadata responses (no full source text) to the 241 catalog snapshots from v3.14.4. The public `/ai/static-delivery.json` now inventories **3,758** resources: **3,719** API metadata JSON responses, **22** discovery files and **17** assets. The 3,478 extra citation paths are tested against the PHP source in `build_api_snapshots.php --check`; selected citation URLs from every book and both research collections are exercised over HTTP. **4,079** strict Apache HTTP assertions passed locally, with 15/15 full regression stages and the original 5,105 files unchanged. All static URLs bypass PHP in Apache/LiteSpeed when their exact GET/HEAD rewrite conditions apply; this has not been verified on production LiteSpeed.
+
+For full details see [Static citation delivery](STATIC_CITATION_DELIVERY.md).
+
+---
+
 # Static delivery assurance (v3.14.4)
 
 ## What is and is not static

@@ -102,7 +102,7 @@ def run_probe(probe:AgentProbe)->dict:
     check('canonical_home','/',lambda r:html(r,'/'))
     check('agent_guide','/for-agents/',lambda r: (html(r,'/for-agents/')[0] and b'books' in r.body.lower() and b'research' in r.body.lower(),'Agent guide must name books and supplemental research'))
     check('robots','/robots.txt',lambda r:(r.status==200 and 'text/plain' in r.media_type and b'Sitemap:' in r.body and b'Disallow: /data/' in r.body,'Robots and sitemap declaration'))
-    check('sitemap','/sitemap.xml',lambda r:(r.status==200 and r.media_type in ('application/xml','text/xml') and len(ET.fromstring(r.body).findall('.//{*}loc'))==16,'Sitemap index has 16 expected child sitemaps'))
+    check('sitemap','/sitemap.xml',lambda r:(r.status==200 and r.media_type in ('application/xml','text/xml') and len(ET.fromstring(r.body).findall('.//{*}loc'))==17,'Sitemap index has 17 expected child sitemaps'))
     check('openapi','/openapi.json',lambda r:json_api(r,lambda d:d.get('openapi','').startswith('3.1.') and isinstance(d.get('paths'),dict)))
     check('agent_directory','/api/v1/',lambda r:json_api(r,lambda d:d.get('search_default_scope')==['books'] and d.get('read_only') is True and d.get('bulk_downloads') is False))
     def book_count(d):
