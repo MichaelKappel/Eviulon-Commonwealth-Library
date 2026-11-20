@@ -1,0 +1,15 @@
+{
+  "release_id": "v2026.11.20.3.14.16-OPEN-BOOKS-AMAZON-SUPPORT",
+  "distribution_kit_version": "v2026.11.20.3.14.16.1",
+  "source_class": "official_book",
+  "record_count": 14,
+  "source_jsonl_sha256": "610cc8e1ffc9236eda278fb02221c9a9c23b42d68a5505e2f59eddb211e6a30a",
+  "rights_statement": "Library_Website/datasets/LICENSE-OPEN-USE.md",
+  "owner_permission": "Eviulon-Open-Use-1.0",
+  "public_full_text_in_this_pull_request": false,
+  "website_deployment_verified": false,
+  "external_repository_publication_verified": false,
+  "model_training_verified": false,
+  "supplemental_research_included": false,
+  "protected_uai_included": false
+}
