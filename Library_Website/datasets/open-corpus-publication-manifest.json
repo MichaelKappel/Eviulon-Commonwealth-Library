@@ -1,0 +1,22 @@
+{
+  "release_id": "v2026.11.20.3.14.16-OPEN-BOOKS-AMAZON-SUPPORT",
+  "distribution_kit_version": "v2026.11.20.3.14.16.1",
+  "source_class": "official_book",
+  "record_count": 14,
+  "source_jsonl_sha256": "53b0e06554519c893f713d0118b1fb0064a606d5bb34f85118f430b59d02e33a",
+  "rights_statement": "Library_Website/datasets/LICENSE-OPEN-USE.md",
+  "owner_permission": "Eviulon-Open-Use-1.0",
+  "public_full_text_in_this_pull_request": true,
+  "website_deployment_verified": false,
+  "external_repository_publication_verified": false,
+  "model_training_verified": false,
+  "supplemental_research_included": false,
+  "protected_uai_included": false,
+  "github_import_prepared": true,
+  "github_review_branch_publication_verified": true,
+  "github_review_branch": "distribution/open-books-v3.14.16",
+  "github_full_text_commit": "66991a47fc54a3fa77249c4f72390b568154da1c",
+  "github_default_branch_merged": false,
+  "github_book_count": 14,
+  "github_jsonl_url": "https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/blob/distribution/open-books-v3.14.16/Library_Website/datasets/data/books/train.jsonl"
+}
