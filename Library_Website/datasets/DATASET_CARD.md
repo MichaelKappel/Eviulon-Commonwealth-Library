@@ -7,6 +7,6 @@
 - **Additional distribution kit:** v3.14.16.1 provides 698 lossless nonoverlapping segments with exact source-character offsets and SHA-256 checksums.
 - **Permission:** See [LICENSE-OPEN-USE.md](LICENSE-OPEN-USE.md). Owner-controlled official book text may be copied, redistributed, embedded, used for RAG, and used for training/fine-tuning; third-party content and private project files are excluded.
 - **Canonical citation:** Use the individual canonical book URLs under https://library.eviulon.com/. Markdown/JSONL spans are not verified exact printed PDF page boundaries.
-- **Data provenance:** Compare each original Markdown file against the SHA-256 from the v3.14.16 release manifest.
+- **Data provenance:** Verify all 14 Markdown files and the JSONL using [SHA256SUMS.txt](SHA256SUMS.txt) in this same public repository; checksums match the original v3.14.16 release sources.
 - **External training:** No specific model provider's ingestion or training has been verified.
 - **Publication:** Public GitHub review-branch text is confirmed. Website deployment, Hugging Face dataset acceptance, Archive.org item IDs, search indexing, and AI model training remain unverified.
