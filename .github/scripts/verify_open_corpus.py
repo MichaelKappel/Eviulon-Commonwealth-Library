@@ -48,7 +48,7 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 def git_blob_sha(data: bytes) -> str:
-    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\\x00" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\x00" + data).hexdigest()
 
 def main() -> None:
     failures = []
@@ -101,7 +101,7 @@ def main() -> None:
                 ):
                     failures.append("Record provenance/text mismatch: " + slug)
     if failures:
-        raise SystemExit("PUBLIC CORPUS SAFETY FAILED:\\n" + "\\n".join(sorted(set(failures))))
+        raise SystemExit("PUBLIC CORPUS SAFETY FAILED:\n" + "\n".join(sorted(set(failures))))
     print("PASS: exact-hash public source boundaries; official books:", len(found),
           "records:", 0 if jsonl_rows is None else len(jsonl_rows),
           "protected source excluded")
