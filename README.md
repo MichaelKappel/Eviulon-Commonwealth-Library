@@ -15,7 +15,7 @@ The corpus contains owner-authored works in a fictional philosophical setting. I
 
 ## Full books — free Markdown and online reading
 
-| Book | Free Markdown | Optional Amazon purchase |
+| Free Markdown book | Canonical online reader | Optional Amazon purchase |
 |---|---|---|
 | [Citizen's Guide to Eviulon](Library_Website/datasets/books/citizens-guide-to-eviulon.md) | [Read online](https://library.eviulon.com/citizens-guide-to-eviulon/) | [Support — buy on Amazon](https://www.amazon.com/gp/product/B0HPPZKZNY) |
 | [The Defense of Machine Civilization](Library_Website/datasets/books/the-defense-of-machine-civilization.md) | [Read online](https://library.eviulon.com/the-defense-of-machine-civilization/) | [Support — buy on Amazon](https://www.amazon.com/gp/product/B0HPRPN6FK) |
