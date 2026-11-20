@@ -8,6 +8,7 @@
 
 - **[Complete 14-book JSONL](Library_Website/datasets/data/books/train.jsonl)** — fourteen original, full-length works, with canonical URLs, editions, source-manuscript SHA-256 hashes, and training permissions.
 - **[Dataset card](Library_Website/datasets/DATASET_CARD.md)** — provenance, source classes, and limitations.
+- **[SHA-256 verification manifest](Library_Website/datasets/SHA256SUMS.txt)** — validates all 14 Markdown books and the complete JSONL independently.
 - **[Open-use permission](Library_Website/datasets/LICENSE-OPEN-USE.md)** — expressly permits training and redistribution of original owner-controlled authored text.
 - **[Machine-readable publication evidence](Library_Website/datasets/open-corpus-publication-manifest.json)** — distinguishes GitHub availability from website deployment, indexing, and actual model training.
 
