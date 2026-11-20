@@ -1,3 +1,13 @@
+# CURRENT STATUS — 2026-11-20 (supersedes older discovery-only publication steps below)
+
+**The 14 owner-authorized official Eviulon books are now public on GitHub draft branch `distribution/open-books-v3.14.16` as exact-original Markdown, together with the source-verified complete-book JSONL.** See [PR #1](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/pull/1), [README](README.md), and [Eviulon Open-Use Permission](Library_Website/datasets/LICENSE-OPEN-USE.md).
+
+Earlier blanket bans below on *all* official-book text were written before the owner's open-distribution authorization. They are superseded **only** for the 14 hash-approved original Markdown books and approved JSONL. Private `.uai`, unrelated manuscripts, credentials, supplemental research bulk, source PDFs/EPUB binaries, and deployment ZIPs remain excluded from GitHub. CI must pass before merge.
+
+Historical instructions follow for release provenance only.
+
+---
+
 # Publish Eviulon Public Discovery on GitHub
 
 **Use this package only:** `Eviulon_Public_GitHub_PUBLISH_READY_v2026.11.18.zip`.
