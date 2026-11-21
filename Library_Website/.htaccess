@@ -1,6 +1,9 @@
 Options -Indexes -MultiViews
-DirectoryIndex index.php
+DirectoryIndex index.php index.html
 RewriteEngine On
+# Serve the authorized public download catalog; do not enable directory listings.
+RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+RewriteRule ^downloads/?$ downloads/index.html [L]
 RewriteRule ^(data|src|tests|tools|private)(/|$) - [F,L,NC]
 RewriteRule ^(?:\.uai|\.git)(/|$) - [F,L,NC]
 RewriteRule ^(?:README_DEPLOY|QA_REPORT|CHANGELOG)\.md$ - [F,L,NC]
