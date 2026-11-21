@@ -78,3 +78,20 @@ python3 tools/test_mcp.py --http https://library.eviulon.com
 This is a bounded, non-writing protocol smoke test. Its CLI rejects arbitrary external domains; it can target only the canonical HTTPS library or a loopback test host. This smoke test is not an independent agent-client compatibility certification; validate any intended MCP client separately.
 
 The code is PHP without SDK dependencies, databases, scheduled jobs, network calls from the server, payment requirements or cloud GPU costs. The operator must still verify Apache `.htaccess` protection of `data/`, `src/`, `tools/`, and private paths on the **actual production host**; local PHP tests cannot prove real hosting safety.
+
+
+## v3.14.16.6 live-evidence hardening and operator verification
+
+The project owner supplied two HTTPS terminal responses stamped 2026-11-21 00:15 UTC: `tools/list` (six declared read-only tools) and `tools/call` to `eviulon_list_books` (14 official books, 1,925 print pages by sum). These are valid **owner-supplied external MCP discovery and book-list call evidence**. They do not, by themselves, prove live cited-excerpt retrieval, generalized MCP-client compatibility, indexing, or model training.
+
+The v3.14.16.6 patch changes only the MCP server identity version from stale `3.14.12` to `3.14.16.6`, clarifies that the single-page tool is separate from authorized full-book downloads, and provides a bounded operator-run smoke test for actual source evidence. It **does not change** `MCP-Protocol-Version: 2026-07-28`, tool names, request schemas, security gates, book text, research permissions or protected `.uai` material. The server version is an implementation label; it is NOT the MCP protocol version.
+
+After installing `src/mcp.php` onto the website document root, test from your operator workstation:
+
+```bash
+python3 tools/smoke_live_mcp_evidence.py --url https://library.eviulon.com/mcp/ --expect-server-version 3.14.16.6
+```
+
+The script requires only Python 3.10+ and is intentionally locked to the official `library.eviulon.com/mcp/` endpoint (or explicit localhost for offline tests). It executes `server/discover`, `tools/list`, `eviulon_list_books`, `eviulon_evidence`, `eviulon_read_book_page`, and `eviulon_search`. It verifies read-only tool names, counts, complete quoted-text SHA-256, canonical page citations and default books-only scope, and checks the literal page content against the official REST endpoint. It emits PASS or FAIL summaries rather than full source passages. The output is **operator-observed evidence** and does not establish independent model ingestion or training.
+
+A client that only supports session-based MCP 2025-era `initialize` cannot connect using that protocol to this version-bound stateless endpoint. General clients supporting the newer revision can be tested separately with their official SDKs; no universal interoperability is claimed.
