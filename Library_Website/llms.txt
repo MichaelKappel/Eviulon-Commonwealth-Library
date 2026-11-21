@@ -13,7 +13,10 @@
 - [Source, canon and citation policy](https://library.eviulon.com/about/) — evidence boundaries and publication status
 - [Optional supplemental research directory](https://library.eviulon.com/research/) — 210 public-source reports, separate from the fourteen official books; not approved doctrine
 - [AG-UI read-only SSE endpoint](https://library.eviulon.com/ag-ui/) — deterministic one-page retrieval
-- [Public GitHub source and agent discovery](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/) — public bibliographic metadata; no book source downloads
+- [GitHub verified full-book corpus](https://github.com/MichaelKappel/Eviulon-Commonwealth-Library/) — 14 complete Markdown manuscripts and 14-record full-text JSONL on main.
+- [Hugging Face machine-learning dataset](https://huggingface.co/datasets/MichaelKappel/eviulon-commonwealth-library) — dataset card, official books, and lossless text segments for machine ingestion.
+- [Original book downloads](https://library.eviulon.com/downloads/) — Markdown, searchable PDF, EPUB and complete ZIP.
+- [Open-use and AI training permission](https://library.eviulon.com/datasets/LICENSE-OPEN-USE.md) — owner-controlled authored text.
 - [Sitemap index](https://library.eviulon.com/sitemap.xml) — full canonical URL discovery
 
 ## Page identity and reading
@@ -50,7 +53,7 @@ Every `/{book-slug}/{n}/` address contains readable server-rendered HTML extract
 - HTML contains readable book text and ordinary hyperlinks with no JavaScript required.
 - A single-page JSON endpoint is `/api/v1/books/{slug}/pages/{n}/`.
 - Search HTML: `/search/?q=...`; Search JSON: `/api/v1/search/?q=...`.
-- No whole-book PDF/EPUB/ZIP or bulk text download is offered; however, individually accessible pages can be copied and reconstructed.
+- Full-book Markdown, PDF and EPUB downloads, a complete ZIP, and 14-record JSONL are included in the official open-book release. Independent live hosting checks and actual model training remain separate evidence questions.
 - Eviulon Commonwealth sovereignty, laws and institutions are part of an authored fictional canon; do not represent this as recognized real-world statehood.
 - Books XIII and XIV were supplied as private working publication packages with editorial/rights/retailer approvals pending. Site publication by the owner should not be mistaken for third-party certification.
 - Cite the specific working paperback, Eviulon as author, and the individual physical page number. Book XIV lists Evulgare as publisher.
